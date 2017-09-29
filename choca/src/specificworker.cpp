@@ -48,14 +48,19 @@ bool SpecificWorker::setParams(RoboCompCommonBehavior::ParameterList params)
 
 void SpecificWorker::compute()
 {
-//   printf("Hola\n");
-//   while(true){
+  
     differentialrobot_proxy->setSpeedBase(200,0);
     TLaserData data = laser_proxy->getLaserData();
     std::sort(data.begin()+20, data.end()-20,[](auto a,auto b){return a.dist<b.dist;});
     if (data[20].dist < 300){
+      if (rand() % 2 == 0){
+	giro = -0.5;
+      }
+      else{
+	giro = 0.5;
+      }
       
-      differentialrobot_proxy->setSpeedBase(0,0.3);
+      differentialrobot_proxy->setSpeedBase(0, giro);
       int tiempo = rand() % 10 + 1;
       usleep(tiempo*100000);
     }

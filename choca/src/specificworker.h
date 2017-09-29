@@ -38,6 +38,8 @@ class SpecificWorker : public GenericWorker
 {
 Q_OBJECT
 public:
+	float giro;
+  
 	SpecificWorker(MapPrx& mprx);	
 	~SpecificWorker();
 	bool setParams(RoboCompCommonBehavior::ParameterList params);
