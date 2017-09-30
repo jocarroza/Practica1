@@ -54,10 +54,10 @@ void SpecificWorker::compute()
     std::sort(data.begin()+20, data.end()-20,[](auto a,auto b){return a.dist<b.dist;});
     if (data[20].dist < 300){
       if (rand() % 2 == 0){
-	giro = -0.5;
+	giro = -0.8;
       }
       else{
-	giro = 0.5;
+	giro = 0.8;
       }
       
       differentialrobot_proxy->setSpeedBase(0, giro);
