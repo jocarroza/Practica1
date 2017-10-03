@@ -64,6 +64,8 @@ void SpecificWorker::compute()
       int tiempo = rand() % 10 + 1;
       usleep(tiempo*100000);
     }
+    
+  
 //   }
 //   for(auto d:data)
 //     qDebug()<<d.dist<<d.angle;
@@ -81,6 +83,12 @@ void SpecificWorker::compute()
 // 		std::cout << "Error reading from Camera" << e << std::endl;
 // 	}
 }
+
+void SpecificWorker::setPick(const Pick& myPick)
+{
+
+}
+
 
 
 

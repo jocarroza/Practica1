@@ -46,7 +46,8 @@ public:
 
 
 public slots:
-	void compute(); 	
+	void compute();
+	virtual void setPick(const Pick &myPick);
 
 private:
 	
