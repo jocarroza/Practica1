@@ -86,7 +86,7 @@ void SpecificWorker::compute()
 
 void SpecificWorker::setPick(const Pick& myPick)
 {
-
+std::cout << myPick.x << myPick.z << endl;
 }
 
 
