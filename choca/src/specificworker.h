@@ -38,6 +38,9 @@ class SpecificWorker : public GenericWorker
 {
 Q_OBJECT
 public:
+	
+	
+  
 	float giro;
   
 	SpecificWorker(MapPrx& mprx);	
@@ -50,6 +53,36 @@ public slots:
 	virtual void setPick(const Pick &myPick);
 
 private:
+  struct Target{
+	  mutable QMutex mutex;
+	  QVec coord = QVec::zeros(3);
+	  float alpha;
+	  bool empty = true;
+	  
+	  bool isEmpty(){
+	    QMutexLocker lm(&mutex);
+	    return empty;
+	  }
+	  
+	  void setEmpty(bool e){
+	    QMutexLocker lm(&mutex);
+	    empty = e;
+	  }
+	  
+	 void insertarCoord(float x, float z){
+	   QMutexLocker lm(&mutex);
+	   coord.setItem(0, x);
+	   coord.setItem(1, 0);
+	   coord.setItem(2, z);
+	 }
+	 
+	 QVec extraerCoord(){
+	   QMutexLocker lm(&mutex);
+	   return coord;
+	 }
+	};
+	
+	Target target;
 	
 };
 

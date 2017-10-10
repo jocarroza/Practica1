@@ -48,22 +48,31 @@ bool SpecificWorker::setParams(RoboCompCommonBehavior::ParameterList params)
 
 void SpecificWorker::compute()
 {
+  TBaseState bstate;
+  QVec coord = target.extraerCoord();
+  std::cout << coord.getItem(0) << coord.getItem(2) << endl;
   
-    differentialrobot_proxy->setSpeedBase(200,0);
-    TLaserData data = laser_proxy->getLaserData();
-    std::sort(data.begin()+20, data.end()-20,[](auto a,auto b){return a.dist<b.dist;});
-    if (data[20].dist < 300){
-      if (rand() % 2 == 0){
-	giro = -0.8;
-      }
-      else{
-	giro = 0.8;
-      }
-      
-      differentialrobot_proxy->setSpeedBase(0, giro);
-      int tiempo = rand() % 10 + 1;
-      usleep(tiempo*100000);
-    }
+  differentialrobot_proxy->getBaseState(bstate);
+  InnerModel->updateTransformValues("base", bstate.x, 0, bstate.z, 0, bstate.alpha, 0);
+  
+  if (target.isEmpty() == false){
+  }
+  
+//     differentialrobot_proxy->setSpeedBase(200,0);
+//     TLaserData data = laser_proxy->getLaserData();
+//     std::sort(data.begin()+20, data.end()-20,[](auto a,auto b){return a.dist<b.dist;});
+//     if (data[20].dist < 300){
+//       if (rand() % 2 == 0){
+// 	giro = -0.8;
+//       }
+//       else{
+// 	giro = 0.8;
+//       }
+//       
+//       differentialrobot_proxy->setSpeedBase(0, giro);
+//       int tiempo = rand() % 10 + 1;
+//       usleep(tiempo*100000);
+//     }
     
   
 //   }
@@ -86,7 +95,8 @@ void SpecificWorker::compute()
 
 void SpecificWorker::setPick(const Pick& myPick)
 {
-std::cout << myPick.x << myPick.z << endl;
+  //std::cout << myPick.x << myPick.z << endl;
+  target.insertarCoord(myPick.x, myPick.z);
 }
 
 
