@@ -42,6 +42,9 @@ public:
 	
   
 	float giro;
+	
+	const float MAX_ADV = 400.0;
+	const float MAX_ROT = 0.5; 
   
 	SpecificWorker(MapPrx& mprx);	
 	~SpecificWorker();
@@ -53,9 +56,11 @@ public slots:
 	virtual void setPick(const Pick &myPick);
 
 private:
+  InnerModel *innermodel;
   struct Target{
 	  mutable QMutex mutex;
-	  QVec coord = QVec::zeros(3);
+	  float x = 0.0;
+	  float z = 0.0;
 	  float alpha;
 	  bool empty = true;
 	  
@@ -64,21 +69,21 @@ private:
 	    return empty;
 	  }
 	  
-	  void setEmpty(bool e){
+	  void setEmpty(){
 	    QMutexLocker lm(&mutex);
-	    empty = e;
+	    empty = true;
 	  }
 	  
-	 void insertarCoord(float x, float z){
+	 void insertarCoord(float _x, float _z){
 	   QMutexLocker lm(&mutex);
-	   coord.setItem(0, x);
-	   coord.setItem(1, 0);
-	   coord.setItem(2, z);
+	   empty = false;
+	   x = _x;
+	   z = _z;
 	 }
 	 
-	 QVec extraerCoord(){
+	 std::pair<float, float> extraerCoord(){
 	   QMutexLocker lm(&mutex);
-	   return coord;
+	   return std::make_pair(x,z);
 	 }
 	};
 	
