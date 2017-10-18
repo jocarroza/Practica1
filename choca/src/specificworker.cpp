@@ -135,7 +135,14 @@ void SpecificWorker::gotoTarget()
 
 void SpecificWorker::bug()
 {
+  std::sort(laserData.begin()+20, laserData.end()-20,[](auto a,auto b){return a.dist<b.dist;});
+  
+  differentialrobot_proxy->setSpeedBase(0, 0.3);
+  if (laserData[20].dist > 300){
+    differentialrobot_proxy->setSpeedBase(100, 0);
 
+    state = State::GOTO;
+  }
 }
 
 bool SpecificWorker::obstacle()
@@ -151,7 +158,13 @@ std::sort(laserData.begin()+20, laserData.end()-20,[](auto a,auto b){return a.di
 
 bool SpecificWorker::targetAtSight()
 {
-
+QPolygonF polygon;
+for (auto l; lasercopy){
+   QVec lr = innermodel->laserTo("world", "laser", l.dist, l.angle);
+   polygon << QPointF(lr.x(), lr.z());
+}
+QVec t = target.extraerCoord();
+return  polygon.containsPoint( QPointF(t.x(), t.z() ), Qt::WindingFill );
 }
     
     
@@ -190,7 +203,7 @@ bool SpecificWorker::targetAtSight()
   // 		std::cout << "Error reading from Camera" << e << std::endl;
   // 	}
   
-}
+
 
 float SpecificWorker::sigmoid(float d)
 {	

@@ -57,11 +57,12 @@ public slots:
 
 private:
   InnerModel *innermodel;
-  Target target;
+  
   RoboCompLaser::TLaserData laserData;
   
   enum State {IDLE, GOTO, TURN, AVOID, END, BUG};
   State state = State::IDLE;
+  
 
   struct Target{
 	  mutable QMutex mutex;
@@ -93,7 +94,7 @@ private:
 	 }
 	};
 	
-	
+	Target target;
 	
 	float gaussian(float vr, float vx, float h);
 	float sigmoid(float d);
