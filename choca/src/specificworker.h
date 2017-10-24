@@ -101,8 +101,8 @@ private:
 	
 	void gotoTarget();
 	void bug();
-	bool obstacle();
-	bool targetAtSight();
+	bool obstacle(RoboCompLaser::TLaserData laserData);
+	bool targetAtSight(RoboCompLaser::TLaserData laserCopy);
 	
 };
 

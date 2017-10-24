@@ -94,7 +94,7 @@ void SpecificWorker::gotoTarget()
   
 
   
-  if(obstacle() == true)   // If ther is an obstacle ahead, then transit to Bug
+  if(obstacle(laserData) == true)   // If ther is an obstacle ahead, then transit to Bug
 
    {
 
@@ -135,17 +135,17 @@ void SpecificWorker::gotoTarget()
 
 void SpecificWorker::bug()
 {
-  std::sort(laserData.begin()+20, laserData.end()-20,[](auto a,auto b){return a.dist<b.dist;});
+  std::sort(laserData.begin()+8, laserData.end()-8,[](auto a,auto b){return a.dist<b.dist;});
   
   differentialrobot_proxy->setSpeedBase(0, 0.3);
-  if (laserData[20].dist > 300){
+  if (laserData[8].dist > 300){
     differentialrobot_proxy->setSpeedBase(100, 0);
 
     state = State::GOTO;
   }
 }
 
-bool SpecificWorker::obstacle()
+bool SpecificWorker::obstacle(RoboCompLaser::TLaserData laserData)
 {
 std::sort(laserData.begin()+20, laserData.end()-20,[](auto a,auto b){return a.dist<b.dist;});
 
@@ -156,14 +156,16 @@ std::sort(laserData.begin()+20, laserData.end()-20,[](auto a,auto b){return a.di
 
 }
 
-bool SpecificWorker::targetAtSight()
+bool SpecificWorker::targetAtSight(RoboCompLaser::TLaserData laserCopy)
 {
 QPolygonF polygon;
-for (auto l; lasercopy){
+for (auto l: laserCopy){
    QVec lr = innermodel->laserTo("world", "laser", l.dist, l.angle);
    polygon << QPointF(lr.x(), lr.z());
 }
-QVec t = target.extraerCoord();
+std::pair<float, float> coord = target.extraerCoord();
+
+QVec t = QVec::vec3(coord.first, 0, coord.second);
 return  polygon.containsPoint( QPointF(t.x(), t.z() ), Qt::WindingFill );
 }
     
