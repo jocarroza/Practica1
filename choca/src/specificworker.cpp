@@ -130,7 +130,7 @@ void SpecificWorker::gotoTarget(const TLaserData &laserData)
 	vrot=MAXROT;
       if(vrot< -MAXROT)
 	vrot=-MAXROT;
-      vAdv = MAXADV*f1(vAdv)*f2(vrot,0.9,0.1);
+      vAdv = MAXADV*f1(vAdv)*f2(vrot,0.3,0.5);
       differentialrobot_proxy->setSpeedBase(vAdv,vrot);
       
   }
