@@ -59,8 +59,6 @@ private:
   InnerModel *innermodel;
   
   RoboCompLaser::TLaserData laserData;
-  float distanciaAnterior;
-  QLine2D linea;
   
   enum State {IDLE, GOTO, BUG};
   State state = State::IDLE;
@@ -78,9 +76,9 @@ private:
 	    return empty;
 	  }
 	  
-	  void setEmpty(float _empty){
+	  void setEmpty(){
 	    QMutexLocker lm(&mutex);
-	    empty = _empty;
+	    empty = true;
 	  }
 	  
 	 void insertarCoord(float _x, float _z){
@@ -101,16 +99,11 @@ private:
 	float gaussian(float vr, float vx, float h);
 	float sigmoid(float d);
 	
-	void gotoTarget(const TLaserData &laserData);
-	void bug(const TLaserData &tLaser, const TBaseState& bState);
-	bool obstacle(RoboCompLaser::TLaserData laserData);
-	bool targetAtSight(RoboCompLaser::TLaserData laserCopy);
-	float distanceToLine(const TBaseState &bState);
-	float obstacleLeft(const TLaserData &tLaser);
-	float f1(float d);
-	float f2(float r,float h, float Vx);
+	void gotoTarget();
+	void bug();
+	bool obstacle();
+	bool targetAtSight();
 	
 };
 
 #endif
-
