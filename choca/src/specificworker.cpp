@@ -121,7 +121,7 @@ void SpecificWorker::gotoTarget()
 	vRot = -MAX_ROT;
 
       
-      vAdv = MAX_ADV * sigmoid(d)  * gaussian(vRot, 0.3, 0.5);
+      vAdv = MAX_ADV * sigmoid(d)  * gaussian(vRot, 0.8, 0.5);
       differentialrobot_proxy->setSpeedBase(vAdv,vRot);
     }
     else{
@@ -135,20 +135,19 @@ void SpecificWorker::gotoTarget()
 
 void SpecificWorker::bug()
 {
-  std::sort(laserData.begin()+10, laserData.end()-10,[](auto a,auto b){return a.dist<b.dist;});
-  
-  differentialrobot_proxy->setSpeedBase(0, 0.3);
+  std::sort(laserData.begin()+8, laserData.end()-8,[](auto a,auto b){return a.dist<b.dist;});
   
   
-  
-  if (laserData[10].dist > 300){
+  if (laserData[8].dist < 400 || laserData[laserData.size()-8].dist < 400){
+    differentialrobot_proxy->setSpeedBase(0, 0.3);
+  }
+  else{
     differentialrobot_proxy->setSpeedBase(100, 0);
-    usleep(100000);
   }
   
   if (targetAtSight()){
-    differentialrobot_proxy->setSpeedBase(300, 0);
-    usleep(1000000);
+//     differentialrobot_proxy->setSpeedBase(300, 0);
+//     usleep(1000000);
     state = State::GOTO;
   }
   
