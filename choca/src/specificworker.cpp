@@ -229,6 +229,27 @@ float SpecificWorker::gaussian(float vr, float vx, float h)
   return exp(-(vr*vr)/landa);
 }
 
+void SpecificWorker::go(const string& nodo, const float x, const float y, const float alpha)
+{
+
+}
+
+void SpecificWorker::turn(const float speed)
+{
+
+}
+
+bool SpecificWorker::atTarget()
+{
+
+}
+
+void SpecificWorker::stop()
+{
+
+}
+
+
 void SpecificWorker::setPick(const Pick& myPick)
 {
   //std::cout << myPick.x << myPick.z << endl;

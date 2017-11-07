@@ -53,6 +53,10 @@ public:
 
 public slots:
 	void compute();
+	virtual void go(const string &nodo, const float x, const float y, const float alpha);
+	virtual void turn(const float speed);
+	virtual bool atTarget();
+	virtual void stop();
 	virtual void setPick(const Pick &myPick);
 
 private:

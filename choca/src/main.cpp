@@ -80,11 +80,13 @@
 #include "specificmonitor.h"
 #include "commonbehaviorI.h"
 
+#include <gotopointI.h>
 #include <rcismousepickerI.h>
 
 #include <Laser.h>
 #include <DifferentialRobot.h>
 #include <RCISMousePicker.h>
+#include <GotoPoint.h>
 
 
 // User includes here
@@ -93,10 +95,11 @@
 using namespace std;
 using namespace RoboCompCommonBehavior;
 
-
+using namespace RoboCompLaser;
 using namespace RoboCompDifferentialRobot;
 using namespace RoboCompRCISMousePicker;
-using namespace RoboCompLaser;
+using namespace RoboCompGotoPoint;
+
 
 
 class choca : public RoboComp::Application
@@ -179,13 +182,7 @@ int ::choca::run(int argc, char* argv[])
 	rInfo("DifferentialRobotProxy initialized Ok!");
 	mprx["DifferentialRobotProxy"] = (::IceProxy::Ice::Object*)(&differentialrobot_proxy);//Remote server proxy creation example
 
-	IceStorm::TopicManagerPrx topicManager;
-	try{
-	topicManager = IceStorm::TopicManagerPrx::checkedCast(communicator()->propertyToProxy("TopicManager.Proxy"));
-	} catch(const Ice::Exception& ex){
-		cout << "[" << PROGRAM_NAME << "]: Exception: STORM not running: " << ex << endl;
-		return EXIT_FAILURE;
-	}
+	IceStorm::TopicManagerPrx topicManager = IceStorm::TopicManagerPrx::checkedCast(communicator()->propertyToProxy("TopicManager.Proxy"));
 
 
 	SpecificWorker *worker = new SpecificWorker(mprx);
@@ -216,6 +213,18 @@ int ::choca::run(int argc, char* argv[])
 		adapterCommonBehavior->activate();
 
 
+
+
+		// Server adapter creation and publication
+		if (not GenericMonitor::configGetString(communicator(), prefix, "GotoPoint.Endpoints", tmp, ""))
+		{
+			cout << "[" << PROGRAM_NAME << "]: Can't read configuration for proxy GotoPoint";
+		}
+		Ice::ObjectAdapterPtr adapterGotoPoint = communicator()->createObjectAdapterWithEndpoints("GotoPoint", tmp);
+		GotoPointI *gotopoint = new GotoPointI(worker);
+		adapterGotoPoint->add(gotopoint, communicator()->stringToIdentity("gotopoint"));
+		adapterGotoPoint->activate();
+		cout << "[" << PROGRAM_NAME << "]: GotoPoint adapter created in port " << tmp << endl;
 
 
 
