@@ -231,22 +231,25 @@ float SpecificWorker::gaussian(float vr, float vx, float h)
 
 void SpecificWorker::go(const string& nodo, const float x, const float y, const float alpha)
 {
-
+target.insertarCoord(x, y);
 }
 
 void SpecificWorker::turn(const float speed)
 {
-
+  differentialrobot_proxy->setSpeedBase(0, 0.3);
 }
 
 bool SpecificWorker::atTarget()
 {
-
+  QVec tr = innermodel->transform("base", QVec::vec3(coord.first, 0, coord.second), "world");
+  float d = tr.norm2();
+  return true;
+  
 }
 
 void SpecificWorker::stop()
 {
-
+  differentialrobot_proxy->setSpeedBase(0, 0);
 }
 
 
