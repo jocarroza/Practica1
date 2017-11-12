@@ -121,7 +121,7 @@ void SpecificWorker::gotoTarget()
 	vRot = -MAX_ROT;
 
       
-      vAdv = MAX_ADV * sigmoid(d)  * gaussian(vRot, 0.8, 0.5);
+      vAdv = MAX_ADV * sigmoid(d)  * gaussian(vRot, 0.5, 0.5);
       differentialrobot_proxy->setSpeedBase(vAdv,vRot);
     }
     else{
@@ -138,11 +138,13 @@ void SpecificWorker::bug()
   std::sort(laserData.begin()+8, laserData.end()-8,[](auto a,auto b){return a.dist<b.dist;});
   
   
-  if (laserData[8].dist < 400 || laserData[laserData.size()-8].dist < 400){
+  if (laserData[8].dist < 350 || laserData[laserData.size()-8].dist < 350){
     differentialrobot_proxy->setSpeedBase(0, 0.3);
   }
   else{
     differentialrobot_proxy->setSpeedBase(100, 0);
+    usleep(200000);
+    state = State::GOTO;
   }
   
   if (targetAtSight()){
@@ -156,9 +158,9 @@ void SpecificWorker::bug()
 
 bool SpecificWorker::obstacle()
 {
-std::sort(laserData.begin()+20, laserData.end()-20,[](auto a,auto b){return a.dist<b.dist;});
+std::sort(laserData.begin()+8, laserData.end()-8,[](auto a,auto b){return a.dist<b.dist;});
 
- if( laserData[20].dist < 300 || laserData[laserData.size()-20].dist < 300)
+ if( laserData[8].dist < 350 || laserData[laserData.size()-8].dist < 350)
    return true;
  else
    return false;
@@ -241,9 +243,9 @@ void SpecificWorker::turn(const float speed)
 
 bool SpecificWorker::atTarget()
 {
-  QVec tr = innermodel->transform("base", QVec::vec3(coord.first, 0, coord.second), "world");
-  float d = tr.norm2();
-  return true;
+//   QVec tr = innermodel->transform("base", QVec::vec3(coord.first, 0, coord.second), "world");
+//   float d = tr.norm2();
+//   return true;
   
 }
 
