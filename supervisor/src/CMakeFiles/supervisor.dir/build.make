@@ -59,21 +59,21 @@ include src/CMakeFiles/supervisor.dir/flags.make
 
 src/CommonBehavior.cpp: /opt/robocomp/interfaces/CommonBehavior.ice
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating CommonBehavior.cpp and CommonBehavior.h from CommonBehavior.ice"
-	cd /home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor/src && slice2cpp -I/home/salabeta/robocomp//interfaces/ -I/opt/robocomp/interfaces -I. /opt/robocomp/interfaces/CommonBehavior.ice --output-dir .
+	cd /home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor/src && slice2cpp -I/opt/robocomp///interfaces/ -I/opt/robocomp/interfaces -I. /opt/robocomp/interfaces/CommonBehavior.ice --output-dir .
 
 src/CommonBehavior.h: src/CommonBehavior.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate src/CommonBehavior.h
 
 src/AprilTags.cpp: /opt/robocomp/interfaces/AprilTags.ice
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating AprilTags.cpp and AprilTags.h from AprilTags.ice"
-	cd /home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor/src && slice2cpp -I/home/salabeta/robocomp//interfaces/ -I/opt/robocomp/interfaces -I. /opt/robocomp/interfaces/AprilTags.ice --output-dir .
+	cd /home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor/src && slice2cpp -I/opt/robocomp///interfaces/ -I/opt/robocomp/interfaces -I. /opt/robocomp/interfaces/AprilTags.ice --output-dir .
 
 src/AprilTags.h: src/AprilTags.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate src/AprilTags.h
 
 src/DifferentialRobot.cpp: /opt/robocomp/interfaces/DifferentialRobot.ice
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating DifferentialRobot.cpp and DifferentialRobot.h from DifferentialRobot.ice"
-	cd /home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor/src && slice2cpp -I/home/salabeta/robocomp//interfaces/ -I/opt/robocomp/interfaces -I. /opt/robocomp/interfaces/DifferentialRobot.ice --output-dir .
+	cd /home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor/src && slice2cpp -I/opt/robocomp///interfaces/ -I/opt/robocomp/interfaces -I. /opt/robocomp/interfaces/DifferentialRobot.ice --output-dir .
 
 src/DifferentialRobot.h: src/DifferentialRobot.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate src/DifferentialRobot.h
@@ -130,52 +130,52 @@ src/CMakeFiles/supervisor.dir/specificmonitor.cpp.o.provides: src/CMakeFiles/sup
 src/CMakeFiles/supervisor.dir/specificmonitor.cpp.o.provides.build: src/CMakeFiles/supervisor.dir/specificmonitor.cpp.o
 
 
-src/CMakeFiles/supervisor.dir/home/salabeta/robocomp/classes/rapplication/rapplication.cpp.o: src/CMakeFiles/supervisor.dir/flags.make
-src/CMakeFiles/supervisor.dir/home/salabeta/robocomp/classes/rapplication/rapplication.cpp.o: /home/salabeta/robocomp/classes/rapplication/rapplication.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object src/CMakeFiles/supervisor.dir/home/salabeta/robocomp/classes/rapplication/rapplication.cpp.o"
-	cd /home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/supervisor.dir/home/salabeta/robocomp/classes/rapplication/rapplication.cpp.o -c /home/salabeta/robocomp/classes/rapplication/rapplication.cpp
+src/CMakeFiles/supervisor.dir/opt/robocomp/classes/rapplication/rapplication.cpp.o: src/CMakeFiles/supervisor.dir/flags.make
+src/CMakeFiles/supervisor.dir/opt/robocomp/classes/rapplication/rapplication.cpp.o: /opt/robocomp/classes/rapplication/rapplication.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object src/CMakeFiles/supervisor.dir/opt/robocomp/classes/rapplication/rapplication.cpp.o"
+	cd /home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/supervisor.dir/opt/robocomp/classes/rapplication/rapplication.cpp.o -c /opt/robocomp/classes/rapplication/rapplication.cpp
 
-src/CMakeFiles/supervisor.dir/home/salabeta/robocomp/classes/rapplication/rapplication.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/supervisor.dir/home/salabeta/robocomp/classes/rapplication/rapplication.cpp.i"
-	cd /home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/salabeta/robocomp/classes/rapplication/rapplication.cpp > CMakeFiles/supervisor.dir/home/salabeta/robocomp/classes/rapplication/rapplication.cpp.i
+src/CMakeFiles/supervisor.dir/opt/robocomp/classes/rapplication/rapplication.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/supervisor.dir/opt/robocomp/classes/rapplication/rapplication.cpp.i"
+	cd /home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /opt/robocomp/classes/rapplication/rapplication.cpp > CMakeFiles/supervisor.dir/opt/robocomp/classes/rapplication/rapplication.cpp.i
 
-src/CMakeFiles/supervisor.dir/home/salabeta/robocomp/classes/rapplication/rapplication.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/supervisor.dir/home/salabeta/robocomp/classes/rapplication/rapplication.cpp.s"
-	cd /home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/salabeta/robocomp/classes/rapplication/rapplication.cpp -o CMakeFiles/supervisor.dir/home/salabeta/robocomp/classes/rapplication/rapplication.cpp.s
+src/CMakeFiles/supervisor.dir/opt/robocomp/classes/rapplication/rapplication.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/supervisor.dir/opt/robocomp/classes/rapplication/rapplication.cpp.s"
+	cd /home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /opt/robocomp/classes/rapplication/rapplication.cpp -o CMakeFiles/supervisor.dir/opt/robocomp/classes/rapplication/rapplication.cpp.s
 
-src/CMakeFiles/supervisor.dir/home/salabeta/robocomp/classes/rapplication/rapplication.cpp.o.requires:
+src/CMakeFiles/supervisor.dir/opt/robocomp/classes/rapplication/rapplication.cpp.o.requires:
 
-.PHONY : src/CMakeFiles/supervisor.dir/home/salabeta/robocomp/classes/rapplication/rapplication.cpp.o.requires
+.PHONY : src/CMakeFiles/supervisor.dir/opt/robocomp/classes/rapplication/rapplication.cpp.o.requires
 
-src/CMakeFiles/supervisor.dir/home/salabeta/robocomp/classes/rapplication/rapplication.cpp.o.provides: src/CMakeFiles/supervisor.dir/home/salabeta/robocomp/classes/rapplication/rapplication.cpp.o.requires
-	$(MAKE) -f src/CMakeFiles/supervisor.dir/build.make src/CMakeFiles/supervisor.dir/home/salabeta/robocomp/classes/rapplication/rapplication.cpp.o.provides.build
-.PHONY : src/CMakeFiles/supervisor.dir/home/salabeta/robocomp/classes/rapplication/rapplication.cpp.o.provides
+src/CMakeFiles/supervisor.dir/opt/robocomp/classes/rapplication/rapplication.cpp.o.provides: src/CMakeFiles/supervisor.dir/opt/robocomp/classes/rapplication/rapplication.cpp.o.requires
+	$(MAKE) -f src/CMakeFiles/supervisor.dir/build.make src/CMakeFiles/supervisor.dir/opt/robocomp/classes/rapplication/rapplication.cpp.o.provides.build
+.PHONY : src/CMakeFiles/supervisor.dir/opt/robocomp/classes/rapplication/rapplication.cpp.o.provides
 
-src/CMakeFiles/supervisor.dir/home/salabeta/robocomp/classes/rapplication/rapplication.cpp.o.provides.build: src/CMakeFiles/supervisor.dir/home/salabeta/robocomp/classes/rapplication/rapplication.cpp.o
+src/CMakeFiles/supervisor.dir/opt/robocomp/classes/rapplication/rapplication.cpp.o.provides.build: src/CMakeFiles/supervisor.dir/opt/robocomp/classes/rapplication/rapplication.cpp.o
 
 
-src/CMakeFiles/supervisor.dir/home/salabeta/robocomp/classes/qlog/qlog.cpp.o: src/CMakeFiles/supervisor.dir/flags.make
-src/CMakeFiles/supervisor.dir/home/salabeta/robocomp/classes/qlog/qlog.cpp.o: /home/salabeta/robocomp/classes/qlog/qlog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object src/CMakeFiles/supervisor.dir/home/salabeta/robocomp/classes/qlog/qlog.cpp.o"
-	cd /home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/supervisor.dir/home/salabeta/robocomp/classes/qlog/qlog.cpp.o -c /home/salabeta/robocomp/classes/qlog/qlog.cpp
+src/CMakeFiles/supervisor.dir/opt/robocomp/classes/qlog/qlog.cpp.o: src/CMakeFiles/supervisor.dir/flags.make
+src/CMakeFiles/supervisor.dir/opt/robocomp/classes/qlog/qlog.cpp.o: /opt/robocomp/classes/qlog/qlog.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object src/CMakeFiles/supervisor.dir/opt/robocomp/classes/qlog/qlog.cpp.o"
+	cd /home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/supervisor.dir/opt/robocomp/classes/qlog/qlog.cpp.o -c /opt/robocomp/classes/qlog/qlog.cpp
 
-src/CMakeFiles/supervisor.dir/home/salabeta/robocomp/classes/qlog/qlog.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/supervisor.dir/home/salabeta/robocomp/classes/qlog/qlog.cpp.i"
-	cd /home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/salabeta/robocomp/classes/qlog/qlog.cpp > CMakeFiles/supervisor.dir/home/salabeta/robocomp/classes/qlog/qlog.cpp.i
+src/CMakeFiles/supervisor.dir/opt/robocomp/classes/qlog/qlog.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/supervisor.dir/opt/robocomp/classes/qlog/qlog.cpp.i"
+	cd /home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /opt/robocomp/classes/qlog/qlog.cpp > CMakeFiles/supervisor.dir/opt/robocomp/classes/qlog/qlog.cpp.i
 
-src/CMakeFiles/supervisor.dir/home/salabeta/robocomp/classes/qlog/qlog.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/supervisor.dir/home/salabeta/robocomp/classes/qlog/qlog.cpp.s"
-	cd /home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/salabeta/robocomp/classes/qlog/qlog.cpp -o CMakeFiles/supervisor.dir/home/salabeta/robocomp/classes/qlog/qlog.cpp.s
+src/CMakeFiles/supervisor.dir/opt/robocomp/classes/qlog/qlog.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/supervisor.dir/opt/robocomp/classes/qlog/qlog.cpp.s"
+	cd /home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /opt/robocomp/classes/qlog/qlog.cpp -o CMakeFiles/supervisor.dir/opt/robocomp/classes/qlog/qlog.cpp.s
 
-src/CMakeFiles/supervisor.dir/home/salabeta/robocomp/classes/qlog/qlog.cpp.o.requires:
+src/CMakeFiles/supervisor.dir/opt/robocomp/classes/qlog/qlog.cpp.o.requires:
 
-.PHONY : src/CMakeFiles/supervisor.dir/home/salabeta/robocomp/classes/qlog/qlog.cpp.o.requires
+.PHONY : src/CMakeFiles/supervisor.dir/opt/robocomp/classes/qlog/qlog.cpp.o.requires
 
-src/CMakeFiles/supervisor.dir/home/salabeta/robocomp/classes/qlog/qlog.cpp.o.provides: src/CMakeFiles/supervisor.dir/home/salabeta/robocomp/classes/qlog/qlog.cpp.o.requires
-	$(MAKE) -f src/CMakeFiles/supervisor.dir/build.make src/CMakeFiles/supervisor.dir/home/salabeta/robocomp/classes/qlog/qlog.cpp.o.provides.build
-.PHONY : src/CMakeFiles/supervisor.dir/home/salabeta/robocomp/classes/qlog/qlog.cpp.o.provides
+src/CMakeFiles/supervisor.dir/opt/robocomp/classes/qlog/qlog.cpp.o.provides: src/CMakeFiles/supervisor.dir/opt/robocomp/classes/qlog/qlog.cpp.o.requires
+	$(MAKE) -f src/CMakeFiles/supervisor.dir/build.make src/CMakeFiles/supervisor.dir/opt/robocomp/classes/qlog/qlog.cpp.o.provides.build
+.PHONY : src/CMakeFiles/supervisor.dir/opt/robocomp/classes/qlog/qlog.cpp.o.provides
 
-src/CMakeFiles/supervisor.dir/home/salabeta/robocomp/classes/qlog/qlog.cpp.o.provides.build: src/CMakeFiles/supervisor.dir/home/salabeta/robocomp/classes/qlog/qlog.cpp.o
+src/CMakeFiles/supervisor.dir/opt/robocomp/classes/qlog/qlog.cpp.o.provides.build: src/CMakeFiles/supervisor.dir/opt/robocomp/classes/qlog/qlog.cpp.o
 
 
 src/CMakeFiles/supervisor.dir/main.cpp.o: src/CMakeFiles/supervisor.dir/flags.make
@@ -398,8 +398,8 @@ src/CMakeFiles/supervisor.dir/supervisor_automoc.cpp.o.provides.build: src/CMake
 supervisor_OBJECTS = \
 "CMakeFiles/supervisor.dir/specificworker.cpp.o" \
 "CMakeFiles/supervisor.dir/specificmonitor.cpp.o" \
-"CMakeFiles/supervisor.dir/home/salabeta/robocomp/classes/rapplication/rapplication.cpp.o" \
-"CMakeFiles/supervisor.dir/home/salabeta/robocomp/classes/qlog/qlog.cpp.o" \
+"CMakeFiles/supervisor.dir/opt/robocomp/classes/rapplication/rapplication.cpp.o" \
+"CMakeFiles/supervisor.dir/opt/robocomp/classes/qlog/qlog.cpp.o" \
 "CMakeFiles/supervisor.dir/main.cpp.o" \
 "CMakeFiles/supervisor.dir/genericmonitor.cpp.o" \
 "CMakeFiles/supervisor.dir/commonbehaviorI.cpp.o" \
@@ -415,8 +415,8 @@ supervisor_EXTERNAL_OBJECTS =
 
 bin/supervisor: src/CMakeFiles/supervisor.dir/specificworker.cpp.o
 bin/supervisor: src/CMakeFiles/supervisor.dir/specificmonitor.cpp.o
-bin/supervisor: src/CMakeFiles/supervisor.dir/home/salabeta/robocomp/classes/rapplication/rapplication.cpp.o
-bin/supervisor: src/CMakeFiles/supervisor.dir/home/salabeta/robocomp/classes/qlog/qlog.cpp.o
+bin/supervisor: src/CMakeFiles/supervisor.dir/opt/robocomp/classes/rapplication/rapplication.cpp.o
+bin/supervisor: src/CMakeFiles/supervisor.dir/opt/robocomp/classes/qlog/qlog.cpp.o
 bin/supervisor: src/CMakeFiles/supervisor.dir/main.cpp.o
 bin/supervisor: src/CMakeFiles/supervisor.dir/genericmonitor.cpp.o
 bin/supervisor: src/CMakeFiles/supervisor.dir/commonbehaviorI.cpp.o
@@ -446,8 +446,8 @@ src/CMakeFiles/supervisor.dir/build: bin/supervisor
 
 src/CMakeFiles/supervisor.dir/requires: src/CMakeFiles/supervisor.dir/specificworker.cpp.o.requires
 src/CMakeFiles/supervisor.dir/requires: src/CMakeFiles/supervisor.dir/specificmonitor.cpp.o.requires
-src/CMakeFiles/supervisor.dir/requires: src/CMakeFiles/supervisor.dir/home/salabeta/robocomp/classes/rapplication/rapplication.cpp.o.requires
-src/CMakeFiles/supervisor.dir/requires: src/CMakeFiles/supervisor.dir/home/salabeta/robocomp/classes/qlog/qlog.cpp.o.requires
+src/CMakeFiles/supervisor.dir/requires: src/CMakeFiles/supervisor.dir/opt/robocomp/classes/rapplication/rapplication.cpp.o.requires
+src/CMakeFiles/supervisor.dir/requires: src/CMakeFiles/supervisor.dir/opt/robocomp/classes/qlog/qlog.cpp.o.requires
 src/CMakeFiles/supervisor.dir/requires: src/CMakeFiles/supervisor.dir/main.cpp.o.requires
 src/CMakeFiles/supervisor.dir/requires: src/CMakeFiles/supervisor.dir/genericmonitor.cpp.o.requires
 src/CMakeFiles/supervisor.dir/requires: src/CMakeFiles/supervisor.dir/commonbehaviorI.cpp.o.requires

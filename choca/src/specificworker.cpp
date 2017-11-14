@@ -243,10 +243,11 @@ void SpecificWorker::turn(const float speed)
 
 bool SpecificWorker::atTarget()
 {
-//   QVec tr = innermodel->transform("base", QVec::vec3(coord.first, 0, coord.second), "world");
-//   float d = tr.norm2();
-//   return true;
-  
+ //Calcular distancia
+  // si menor que margen
+      //return true
+  //si no
+      //return false
 }
 
 void SpecificWorker::stop()
