@@ -48,6 +48,21 @@ bool SpecificWorker::setParams(RoboCompCommonBehavior::ParameterList params)
 
 void SpecificWorker::compute()
 {
+   switch( state )
+
+ {
+
+   case State::SEARCH:
+
+   break;
+    
+   case State::WAIT:
+     
+   break;
+     
+
+  }
+}
 // 	try
 // 	{
 // 		camera_proxy->getYImage(0,img, cState, bState);
@@ -63,7 +78,11 @@ void SpecificWorker::compute()
 
 void SpecificWorker::newAprilTag(const tagsList &tags)
 {
-  std::cout<<tags[0].id<<endl;
+  //std::cout<<tags[0].id<<endl;
+  tag.id = tags[0].id;
+  tag.x = tags[0].tx;
+  tag.z = tags[0].tz;
+  tag.empty = false;
 }
 
 

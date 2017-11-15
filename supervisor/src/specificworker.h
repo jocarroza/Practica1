@@ -38,6 +38,8 @@ class SpecificWorker : public GenericWorker
 {
 Q_OBJECT
 public:
+	
+	
 	SpecificWorker(MapPrx& mprx);	
 	~SpecificWorker();
 	bool setParams(RoboCompCommonBehavior::ParameterList params);
@@ -48,6 +50,18 @@ public slots:
 	void compute(); 	
 
 private:
+  enum State {SEARCH, WAIT};
+  State state = State::SEARCH;
+  
+  struct Tag{
+	  int id;
+	  float x;
+	  float z;
+	  bool empty = true;
+	};
+	
+	int current = 0;
+	Tag tag;
 	
 };
 
