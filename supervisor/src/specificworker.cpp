@@ -63,7 +63,7 @@ void SpecificWorker::compute()
 
 void SpecificWorker::newAprilTag(const tagsList &tags)
 {
-
+  std::cout<<tags[0].id<<endl;
 }
 
 

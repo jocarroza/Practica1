@@ -61,6 +61,7 @@ public slots:
 
 private:
   InnerModel *innermodel;
+  bool activo = false;
   
   RoboCompLaser::TLaserData laserData;
   
