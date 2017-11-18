@@ -61,7 +61,6 @@ public slots:
 
 private:
   InnerModel *innermodel;
-  bool activo = false;
   
   RoboCompLaser::TLaserData laserData;
   
@@ -88,9 +87,9 @@ private:
 	  
 	 void insertarCoord(float _x, float _z){
 	   QMutexLocker lm(&mutex);
-	   empty = false;
 	   x = _x;
 	   z = _z;
+	   empty = false;
 	 }
 	 
 	 std::pair<float, float> extraerCoord(){

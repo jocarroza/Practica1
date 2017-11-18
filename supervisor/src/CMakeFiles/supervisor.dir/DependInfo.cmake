@@ -4,19 +4,20 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/AprilTags.cpp" "/home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/CMakeFiles/supervisor.dir/AprilTags.cpp.o"
-  "/home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/CommonBehavior.cpp" "/home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/CMakeFiles/supervisor.dir/CommonBehavior.cpp.o"
-  "/home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/DifferentialRobot.cpp" "/home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/CMakeFiles/supervisor.dir/DifferentialRobot.cpp.o"
-  "/home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/apriltagsI.cpp" "/home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/CMakeFiles/supervisor.dir/apriltagsI.cpp.o"
-  "/home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/commonbehaviorI.cpp" "/home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/CMakeFiles/supervisor.dir/commonbehaviorI.cpp.o"
-  "/home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/genericmonitor.cpp" "/home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/CMakeFiles/supervisor.dir/genericmonitor.cpp.o"
-  "/home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/genericworker.cpp" "/home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/CMakeFiles/supervisor.dir/genericworker.cpp.o"
-  "/home/salabeta/robocomp/classes/qlog/qlog.cpp" "/home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/CMakeFiles/supervisor.dir/home/salabeta/robocomp/classes/qlog/qlog.cpp.o"
-  "/home/salabeta/robocomp/classes/rapplication/rapplication.cpp" "/home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/CMakeFiles/supervisor.dir/home/salabeta/robocomp/classes/rapplication/rapplication.cpp.o"
-  "/home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/main.cpp" "/home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/CMakeFiles/supervisor.dir/main.cpp.o"
-  "/home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/specificmonitor.cpp" "/home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/CMakeFiles/supervisor.dir/specificmonitor.cpp.o"
-  "/home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/specificworker.cpp" "/home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/CMakeFiles/supervisor.dir/specificworker.cpp.o"
-  "/home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/supervisor_automoc.cpp" "/home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/CMakeFiles/supervisor.dir/supervisor_automoc.cpp.o"
+  "/home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/AprilTags.cpp" "/home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/CMakeFiles/supervisor.dir/AprilTags.cpp.o"
+  "/home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/CommonBehavior.cpp" "/home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/CMakeFiles/supervisor.dir/CommonBehavior.cpp.o"
+  "/home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/DifferentialRobot.cpp" "/home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/CMakeFiles/supervisor.dir/DifferentialRobot.cpp.o"
+  "/home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/GotoPoint.cpp" "/home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/CMakeFiles/supervisor.dir/GotoPoint.cpp.o"
+  "/home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/apriltagsI.cpp" "/home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/CMakeFiles/supervisor.dir/apriltagsI.cpp.o"
+  "/home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/commonbehaviorI.cpp" "/home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/CMakeFiles/supervisor.dir/commonbehaviorI.cpp.o"
+  "/home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/genericmonitor.cpp" "/home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/CMakeFiles/supervisor.dir/genericmonitor.cpp.o"
+  "/home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/genericworker.cpp" "/home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/CMakeFiles/supervisor.dir/genericworker.cpp.o"
+  "/home/robocomp/robocomp/classes/qlog/qlog.cpp" "/home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/CMakeFiles/supervisor.dir/home/robocomp/robocomp/classes/qlog/qlog.cpp.o"
+  "/home/robocomp/robocomp/classes/rapplication/rapplication.cpp" "/home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/CMakeFiles/supervisor.dir/home/robocomp/robocomp/classes/rapplication/rapplication.cpp.o"
+  "/home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/main.cpp" "/home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/CMakeFiles/supervisor.dir/main.cpp.o"
+  "/home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/specificmonitor.cpp" "/home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/CMakeFiles/supervisor.dir/specificmonitor.cpp.o"
+  "/home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/specificworker.cpp" "/home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/CMakeFiles/supervisor.dir/specificworker.cpp.o"
+  "/home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/supervisor_automoc.cpp" "/home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/CMakeFiles/supervisor.dir/supervisor_automoc.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -42,17 +43,18 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/opt/robocomp/include"
   "/classes"
   "."
-  "/home/salabeta/robocomp/classes"
-  "/home/salabeta/robocomp/libs"
-  "/home/salabeta/robocomp/interfaces"
+  "/home/jose/robocomp/classes"
+  "/home/jose/robocomp/libs"
+  "/home/jose/robocomp/interfaces"
   "/include"
   )
 
 # Pairs of files generated by the same build rule.
 set(CMAKE_MULTIPLE_OUTPUT_PAIRS
-  "/home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/AprilTags.h" "/home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/AprilTags.cpp"
-  "/home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/CommonBehavior.h" "/home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/CommonBehavior.cpp"
-  "/home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/DifferentialRobot.h" "/home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/DifferentialRobot.cpp"
+  "/home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/AprilTags.h" "/home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/AprilTags.cpp"
+  "/home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/CommonBehavior.h" "/home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/CommonBehavior.cpp"
+  "/home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/DifferentialRobot.h" "/home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/DifferentialRobot.cpp"
+  "/home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/GotoPoint.h" "/home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/GotoPoint.cpp"
   )
 
 

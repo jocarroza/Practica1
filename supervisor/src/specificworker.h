@@ -43,14 +43,15 @@ public:
 	SpecificWorker(MapPrx& mprx);	
 	~SpecificWorker();
 	bool setParams(RoboCompCommonBehavior::ParameterList params);
-
 	void newAprilTag(const tagsList &tags);
+	
 
 public slots:
 	void compute(); 	
+	
 
 private:
-  enum State {SEARCH, WAIT};
+  enum State {IDLE, SEARCH, GOTO, WAIT};
   State state = State::SEARCH;
   
   struct Tag{
@@ -62,6 +63,10 @@ private:
 	
 	int current = 0;
 	Tag tag;
+	
+	void search();
+	void goPoint();
+	void wait();
 	
 };
 

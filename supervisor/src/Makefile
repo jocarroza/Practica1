@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor
+CMAKE_SOURCE_DIR = /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor
+CMAKE_BINARY_DIR = /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -124,14 +124,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(CMAKE_COMMAND) -E cmake_progress_start /home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor/CMakeFiles /home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/CMakeFiles/progress.marks
-	cd /home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(MAKE) -f CMakeFiles/Makefile2 src/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor/CMakeFiles 0
+	cd /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(CMAKE_COMMAND) -E cmake_progress_start /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor/CMakeFiles /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/CMakeFiles/progress.marks
+	cd /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(MAKE) -f CMakeFiles/Makefile2 src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(MAKE) -f CMakeFiles/Makefile2 src/clean
+	cd /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(MAKE) -f CMakeFiles/Makefile2 src/clean
 .PHONY : clean
 
 # The main clean target
@@ -141,22 +141,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/CMakeFiles/supervisor.dir/rule:
-	cd /home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/supervisor.dir/rule
+	cd /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/supervisor.dir/rule
 .PHONY : src/CMakeFiles/supervisor.dir/rule
 
 # Convenience name for target.
@@ -166,12 +166,12 @@ supervisor: src/CMakeFiles/supervisor.dir/rule
 
 # fast build rule for target.
 supervisor/fast:
-	cd /home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(MAKE) -f src/CMakeFiles/supervisor.dir/build.make src/CMakeFiles/supervisor.dir/build
+	cd /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(MAKE) -f src/CMakeFiles/supervisor.dir/build.make src/CMakeFiles/supervisor.dir/build
 .PHONY : supervisor/fast
 
 # Convenience name for target.
 src/CMakeFiles/supervisor_automoc.dir/rule:
-	cd /home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/supervisor_automoc.dir/rule
+	cd /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/supervisor_automoc.dir/rule
 .PHONY : src/CMakeFiles/supervisor_automoc.dir/rule
 
 # Convenience name for target.
@@ -181,7 +181,7 @@ supervisor_automoc: src/CMakeFiles/supervisor_automoc.dir/rule
 
 # fast build rule for target.
 supervisor_automoc/fast:
-	cd /home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(MAKE) -f src/CMakeFiles/supervisor_automoc.dir/build.make src/CMakeFiles/supervisor_automoc.dir/build
+	cd /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(MAKE) -f src/CMakeFiles/supervisor_automoc.dir/build.make src/CMakeFiles/supervisor_automoc.dir/build
 .PHONY : supervisor_automoc/fast
 
 AprilTags.o: AprilTags.cpp.o
@@ -190,7 +190,7 @@ AprilTags.o: AprilTags.cpp.o
 
 # target to build an object file
 AprilTags.cpp.o:
-	cd /home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(MAKE) -f src/CMakeFiles/supervisor.dir/build.make src/CMakeFiles/supervisor.dir/AprilTags.cpp.o
+	cd /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(MAKE) -f src/CMakeFiles/supervisor.dir/build.make src/CMakeFiles/supervisor.dir/AprilTags.cpp.o
 .PHONY : AprilTags.cpp.o
 
 AprilTags.i: AprilTags.cpp.i
@@ -199,7 +199,7 @@ AprilTags.i: AprilTags.cpp.i
 
 # target to preprocess a source file
 AprilTags.cpp.i:
-	cd /home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(MAKE) -f src/CMakeFiles/supervisor.dir/build.make src/CMakeFiles/supervisor.dir/AprilTags.cpp.i
+	cd /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(MAKE) -f src/CMakeFiles/supervisor.dir/build.make src/CMakeFiles/supervisor.dir/AprilTags.cpp.i
 .PHONY : AprilTags.cpp.i
 
 AprilTags.s: AprilTags.cpp.s
@@ -208,7 +208,7 @@ AprilTags.s: AprilTags.cpp.s
 
 # target to generate assembly for a file
 AprilTags.cpp.s:
-	cd /home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(MAKE) -f src/CMakeFiles/supervisor.dir/build.make src/CMakeFiles/supervisor.dir/AprilTags.cpp.s
+	cd /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(MAKE) -f src/CMakeFiles/supervisor.dir/build.make src/CMakeFiles/supervisor.dir/AprilTags.cpp.s
 .PHONY : AprilTags.cpp.s
 
 CommonBehavior.o: CommonBehavior.cpp.o
@@ -217,7 +217,7 @@ CommonBehavior.o: CommonBehavior.cpp.o
 
 # target to build an object file
 CommonBehavior.cpp.o:
-	cd /home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(MAKE) -f src/CMakeFiles/supervisor.dir/build.make src/CMakeFiles/supervisor.dir/CommonBehavior.cpp.o
+	cd /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(MAKE) -f src/CMakeFiles/supervisor.dir/build.make src/CMakeFiles/supervisor.dir/CommonBehavior.cpp.o
 .PHONY : CommonBehavior.cpp.o
 
 CommonBehavior.i: CommonBehavior.cpp.i
@@ -226,7 +226,7 @@ CommonBehavior.i: CommonBehavior.cpp.i
 
 # target to preprocess a source file
 CommonBehavior.cpp.i:
-	cd /home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(MAKE) -f src/CMakeFiles/supervisor.dir/build.make src/CMakeFiles/supervisor.dir/CommonBehavior.cpp.i
+	cd /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(MAKE) -f src/CMakeFiles/supervisor.dir/build.make src/CMakeFiles/supervisor.dir/CommonBehavior.cpp.i
 .PHONY : CommonBehavior.cpp.i
 
 CommonBehavior.s: CommonBehavior.cpp.s
@@ -235,7 +235,7 @@ CommonBehavior.s: CommonBehavior.cpp.s
 
 # target to generate assembly for a file
 CommonBehavior.cpp.s:
-	cd /home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(MAKE) -f src/CMakeFiles/supervisor.dir/build.make src/CMakeFiles/supervisor.dir/CommonBehavior.cpp.s
+	cd /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(MAKE) -f src/CMakeFiles/supervisor.dir/build.make src/CMakeFiles/supervisor.dir/CommonBehavior.cpp.s
 .PHONY : CommonBehavior.cpp.s
 
 DifferentialRobot.o: DifferentialRobot.cpp.o
@@ -244,7 +244,7 @@ DifferentialRobot.o: DifferentialRobot.cpp.o
 
 # target to build an object file
 DifferentialRobot.cpp.o:
-	cd /home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(MAKE) -f src/CMakeFiles/supervisor.dir/build.make src/CMakeFiles/supervisor.dir/DifferentialRobot.cpp.o
+	cd /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(MAKE) -f src/CMakeFiles/supervisor.dir/build.make src/CMakeFiles/supervisor.dir/DifferentialRobot.cpp.o
 .PHONY : DifferentialRobot.cpp.o
 
 DifferentialRobot.i: DifferentialRobot.cpp.i
@@ -253,7 +253,7 @@ DifferentialRobot.i: DifferentialRobot.cpp.i
 
 # target to preprocess a source file
 DifferentialRobot.cpp.i:
-	cd /home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(MAKE) -f src/CMakeFiles/supervisor.dir/build.make src/CMakeFiles/supervisor.dir/DifferentialRobot.cpp.i
+	cd /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(MAKE) -f src/CMakeFiles/supervisor.dir/build.make src/CMakeFiles/supervisor.dir/DifferentialRobot.cpp.i
 .PHONY : DifferentialRobot.cpp.i
 
 DifferentialRobot.s: DifferentialRobot.cpp.s
@@ -262,8 +262,35 @@ DifferentialRobot.s: DifferentialRobot.cpp.s
 
 # target to generate assembly for a file
 DifferentialRobot.cpp.s:
-	cd /home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(MAKE) -f src/CMakeFiles/supervisor.dir/build.make src/CMakeFiles/supervisor.dir/DifferentialRobot.cpp.s
+	cd /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(MAKE) -f src/CMakeFiles/supervisor.dir/build.make src/CMakeFiles/supervisor.dir/DifferentialRobot.cpp.s
 .PHONY : DifferentialRobot.cpp.s
+
+GotoPoint.o: GotoPoint.cpp.o
+
+.PHONY : GotoPoint.o
+
+# target to build an object file
+GotoPoint.cpp.o:
+	cd /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(MAKE) -f src/CMakeFiles/supervisor.dir/build.make src/CMakeFiles/supervisor.dir/GotoPoint.cpp.o
+.PHONY : GotoPoint.cpp.o
+
+GotoPoint.i: GotoPoint.cpp.i
+
+.PHONY : GotoPoint.i
+
+# target to preprocess a source file
+GotoPoint.cpp.i:
+	cd /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(MAKE) -f src/CMakeFiles/supervisor.dir/build.make src/CMakeFiles/supervisor.dir/GotoPoint.cpp.i
+.PHONY : GotoPoint.cpp.i
+
+GotoPoint.s: GotoPoint.cpp.s
+
+.PHONY : GotoPoint.s
+
+# target to generate assembly for a file
+GotoPoint.cpp.s:
+	cd /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(MAKE) -f src/CMakeFiles/supervisor.dir/build.make src/CMakeFiles/supervisor.dir/GotoPoint.cpp.s
+.PHONY : GotoPoint.cpp.s
 
 apriltagsI.o: apriltagsI.cpp.o
 
@@ -271,7 +298,7 @@ apriltagsI.o: apriltagsI.cpp.o
 
 # target to build an object file
 apriltagsI.cpp.o:
-	cd /home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(MAKE) -f src/CMakeFiles/supervisor.dir/build.make src/CMakeFiles/supervisor.dir/apriltagsI.cpp.o
+	cd /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(MAKE) -f src/CMakeFiles/supervisor.dir/build.make src/CMakeFiles/supervisor.dir/apriltagsI.cpp.o
 .PHONY : apriltagsI.cpp.o
 
 apriltagsI.i: apriltagsI.cpp.i
@@ -280,7 +307,7 @@ apriltagsI.i: apriltagsI.cpp.i
 
 # target to preprocess a source file
 apriltagsI.cpp.i:
-	cd /home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(MAKE) -f src/CMakeFiles/supervisor.dir/build.make src/CMakeFiles/supervisor.dir/apriltagsI.cpp.i
+	cd /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(MAKE) -f src/CMakeFiles/supervisor.dir/build.make src/CMakeFiles/supervisor.dir/apriltagsI.cpp.i
 .PHONY : apriltagsI.cpp.i
 
 apriltagsI.s: apriltagsI.cpp.s
@@ -289,7 +316,7 @@ apriltagsI.s: apriltagsI.cpp.s
 
 # target to generate assembly for a file
 apriltagsI.cpp.s:
-	cd /home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(MAKE) -f src/CMakeFiles/supervisor.dir/build.make src/CMakeFiles/supervisor.dir/apriltagsI.cpp.s
+	cd /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(MAKE) -f src/CMakeFiles/supervisor.dir/build.make src/CMakeFiles/supervisor.dir/apriltagsI.cpp.s
 .PHONY : apriltagsI.cpp.s
 
 commonbehaviorI.o: commonbehaviorI.cpp.o
@@ -298,7 +325,7 @@ commonbehaviorI.o: commonbehaviorI.cpp.o
 
 # target to build an object file
 commonbehaviorI.cpp.o:
-	cd /home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(MAKE) -f src/CMakeFiles/supervisor.dir/build.make src/CMakeFiles/supervisor.dir/commonbehaviorI.cpp.o
+	cd /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(MAKE) -f src/CMakeFiles/supervisor.dir/build.make src/CMakeFiles/supervisor.dir/commonbehaviorI.cpp.o
 .PHONY : commonbehaviorI.cpp.o
 
 commonbehaviorI.i: commonbehaviorI.cpp.i
@@ -307,7 +334,7 @@ commonbehaviorI.i: commonbehaviorI.cpp.i
 
 # target to preprocess a source file
 commonbehaviorI.cpp.i:
-	cd /home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(MAKE) -f src/CMakeFiles/supervisor.dir/build.make src/CMakeFiles/supervisor.dir/commonbehaviorI.cpp.i
+	cd /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(MAKE) -f src/CMakeFiles/supervisor.dir/build.make src/CMakeFiles/supervisor.dir/commonbehaviorI.cpp.i
 .PHONY : commonbehaviorI.cpp.i
 
 commonbehaviorI.s: commonbehaviorI.cpp.s
@@ -316,7 +343,7 @@ commonbehaviorI.s: commonbehaviorI.cpp.s
 
 # target to generate assembly for a file
 commonbehaviorI.cpp.s:
-	cd /home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(MAKE) -f src/CMakeFiles/supervisor.dir/build.make src/CMakeFiles/supervisor.dir/commonbehaviorI.cpp.s
+	cd /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(MAKE) -f src/CMakeFiles/supervisor.dir/build.make src/CMakeFiles/supervisor.dir/commonbehaviorI.cpp.s
 .PHONY : commonbehaviorI.cpp.s
 
 genericmonitor.o: genericmonitor.cpp.o
@@ -325,7 +352,7 @@ genericmonitor.o: genericmonitor.cpp.o
 
 # target to build an object file
 genericmonitor.cpp.o:
-	cd /home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(MAKE) -f src/CMakeFiles/supervisor.dir/build.make src/CMakeFiles/supervisor.dir/genericmonitor.cpp.o
+	cd /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(MAKE) -f src/CMakeFiles/supervisor.dir/build.make src/CMakeFiles/supervisor.dir/genericmonitor.cpp.o
 .PHONY : genericmonitor.cpp.o
 
 genericmonitor.i: genericmonitor.cpp.i
@@ -334,7 +361,7 @@ genericmonitor.i: genericmonitor.cpp.i
 
 # target to preprocess a source file
 genericmonitor.cpp.i:
-	cd /home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(MAKE) -f src/CMakeFiles/supervisor.dir/build.make src/CMakeFiles/supervisor.dir/genericmonitor.cpp.i
+	cd /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(MAKE) -f src/CMakeFiles/supervisor.dir/build.make src/CMakeFiles/supervisor.dir/genericmonitor.cpp.i
 .PHONY : genericmonitor.cpp.i
 
 genericmonitor.s: genericmonitor.cpp.s
@@ -343,7 +370,7 @@ genericmonitor.s: genericmonitor.cpp.s
 
 # target to generate assembly for a file
 genericmonitor.cpp.s:
-	cd /home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(MAKE) -f src/CMakeFiles/supervisor.dir/build.make src/CMakeFiles/supervisor.dir/genericmonitor.cpp.s
+	cd /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(MAKE) -f src/CMakeFiles/supervisor.dir/build.make src/CMakeFiles/supervisor.dir/genericmonitor.cpp.s
 .PHONY : genericmonitor.cpp.s
 
 genericworker.o: genericworker.cpp.o
@@ -352,7 +379,7 @@ genericworker.o: genericworker.cpp.o
 
 # target to build an object file
 genericworker.cpp.o:
-	cd /home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(MAKE) -f src/CMakeFiles/supervisor.dir/build.make src/CMakeFiles/supervisor.dir/genericworker.cpp.o
+	cd /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(MAKE) -f src/CMakeFiles/supervisor.dir/build.make src/CMakeFiles/supervisor.dir/genericworker.cpp.o
 .PHONY : genericworker.cpp.o
 
 genericworker.i: genericworker.cpp.i
@@ -361,7 +388,7 @@ genericworker.i: genericworker.cpp.i
 
 # target to preprocess a source file
 genericworker.cpp.i:
-	cd /home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(MAKE) -f src/CMakeFiles/supervisor.dir/build.make src/CMakeFiles/supervisor.dir/genericworker.cpp.i
+	cd /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(MAKE) -f src/CMakeFiles/supervisor.dir/build.make src/CMakeFiles/supervisor.dir/genericworker.cpp.i
 .PHONY : genericworker.cpp.i
 
 genericworker.s: genericworker.cpp.s
@@ -370,62 +397,62 @@ genericworker.s: genericworker.cpp.s
 
 # target to generate assembly for a file
 genericworker.cpp.s:
-	cd /home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(MAKE) -f src/CMakeFiles/supervisor.dir/build.make src/CMakeFiles/supervisor.dir/genericworker.cpp.s
+	cd /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(MAKE) -f src/CMakeFiles/supervisor.dir/build.make src/CMakeFiles/supervisor.dir/genericworker.cpp.s
 .PHONY : genericworker.cpp.s
 
-home/salabeta/robocomp/classes/qlog/qlog.o: home/salabeta/robocomp/classes/qlog/qlog.cpp.o
+home/robocomp/robocomp/classes/qlog/qlog.o: home/robocomp/robocomp/classes/qlog/qlog.cpp.o
 
-.PHONY : home/salabeta/robocomp/classes/qlog/qlog.o
-
-# target to build an object file
-home/salabeta/robocomp/classes/qlog/qlog.cpp.o:
-	cd /home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(MAKE) -f src/CMakeFiles/supervisor.dir/build.make src/CMakeFiles/supervisor.dir/home/salabeta/robocomp/classes/qlog/qlog.cpp.o
-.PHONY : home/salabeta/robocomp/classes/qlog/qlog.cpp.o
-
-home/salabeta/robocomp/classes/qlog/qlog.i: home/salabeta/robocomp/classes/qlog/qlog.cpp.i
-
-.PHONY : home/salabeta/robocomp/classes/qlog/qlog.i
-
-# target to preprocess a source file
-home/salabeta/robocomp/classes/qlog/qlog.cpp.i:
-	cd /home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(MAKE) -f src/CMakeFiles/supervisor.dir/build.make src/CMakeFiles/supervisor.dir/home/salabeta/robocomp/classes/qlog/qlog.cpp.i
-.PHONY : home/salabeta/robocomp/classes/qlog/qlog.cpp.i
-
-home/salabeta/robocomp/classes/qlog/qlog.s: home/salabeta/robocomp/classes/qlog/qlog.cpp.s
-
-.PHONY : home/salabeta/robocomp/classes/qlog/qlog.s
-
-# target to generate assembly for a file
-home/salabeta/robocomp/classes/qlog/qlog.cpp.s:
-	cd /home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(MAKE) -f src/CMakeFiles/supervisor.dir/build.make src/CMakeFiles/supervisor.dir/home/salabeta/robocomp/classes/qlog/qlog.cpp.s
-.PHONY : home/salabeta/robocomp/classes/qlog/qlog.cpp.s
-
-home/salabeta/robocomp/classes/rapplication/rapplication.o: home/salabeta/robocomp/classes/rapplication/rapplication.cpp.o
-
-.PHONY : home/salabeta/robocomp/classes/rapplication/rapplication.o
+.PHONY : home/robocomp/robocomp/classes/qlog/qlog.o
 
 # target to build an object file
-home/salabeta/robocomp/classes/rapplication/rapplication.cpp.o:
-	cd /home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(MAKE) -f src/CMakeFiles/supervisor.dir/build.make src/CMakeFiles/supervisor.dir/home/salabeta/robocomp/classes/rapplication/rapplication.cpp.o
-.PHONY : home/salabeta/robocomp/classes/rapplication/rapplication.cpp.o
+home/robocomp/robocomp/classes/qlog/qlog.cpp.o:
+	cd /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(MAKE) -f src/CMakeFiles/supervisor.dir/build.make src/CMakeFiles/supervisor.dir/home/robocomp/robocomp/classes/qlog/qlog.cpp.o
+.PHONY : home/robocomp/robocomp/classes/qlog/qlog.cpp.o
 
-home/salabeta/robocomp/classes/rapplication/rapplication.i: home/salabeta/robocomp/classes/rapplication/rapplication.cpp.i
+home/robocomp/robocomp/classes/qlog/qlog.i: home/robocomp/robocomp/classes/qlog/qlog.cpp.i
 
-.PHONY : home/salabeta/robocomp/classes/rapplication/rapplication.i
+.PHONY : home/robocomp/robocomp/classes/qlog/qlog.i
 
 # target to preprocess a source file
-home/salabeta/robocomp/classes/rapplication/rapplication.cpp.i:
-	cd /home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(MAKE) -f src/CMakeFiles/supervisor.dir/build.make src/CMakeFiles/supervisor.dir/home/salabeta/robocomp/classes/rapplication/rapplication.cpp.i
-.PHONY : home/salabeta/robocomp/classes/rapplication/rapplication.cpp.i
+home/robocomp/robocomp/classes/qlog/qlog.cpp.i:
+	cd /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(MAKE) -f src/CMakeFiles/supervisor.dir/build.make src/CMakeFiles/supervisor.dir/home/robocomp/robocomp/classes/qlog/qlog.cpp.i
+.PHONY : home/robocomp/robocomp/classes/qlog/qlog.cpp.i
 
-home/salabeta/robocomp/classes/rapplication/rapplication.s: home/salabeta/robocomp/classes/rapplication/rapplication.cpp.s
+home/robocomp/robocomp/classes/qlog/qlog.s: home/robocomp/robocomp/classes/qlog/qlog.cpp.s
 
-.PHONY : home/salabeta/robocomp/classes/rapplication/rapplication.s
+.PHONY : home/robocomp/robocomp/classes/qlog/qlog.s
 
 # target to generate assembly for a file
-home/salabeta/robocomp/classes/rapplication/rapplication.cpp.s:
-	cd /home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(MAKE) -f src/CMakeFiles/supervisor.dir/build.make src/CMakeFiles/supervisor.dir/home/salabeta/robocomp/classes/rapplication/rapplication.cpp.s
-.PHONY : home/salabeta/robocomp/classes/rapplication/rapplication.cpp.s
+home/robocomp/robocomp/classes/qlog/qlog.cpp.s:
+	cd /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(MAKE) -f src/CMakeFiles/supervisor.dir/build.make src/CMakeFiles/supervisor.dir/home/robocomp/robocomp/classes/qlog/qlog.cpp.s
+.PHONY : home/robocomp/robocomp/classes/qlog/qlog.cpp.s
+
+home/robocomp/robocomp/classes/rapplication/rapplication.o: home/robocomp/robocomp/classes/rapplication/rapplication.cpp.o
+
+.PHONY : home/robocomp/robocomp/classes/rapplication/rapplication.o
+
+# target to build an object file
+home/robocomp/robocomp/classes/rapplication/rapplication.cpp.o:
+	cd /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(MAKE) -f src/CMakeFiles/supervisor.dir/build.make src/CMakeFiles/supervisor.dir/home/robocomp/robocomp/classes/rapplication/rapplication.cpp.o
+.PHONY : home/robocomp/robocomp/classes/rapplication/rapplication.cpp.o
+
+home/robocomp/robocomp/classes/rapplication/rapplication.i: home/robocomp/robocomp/classes/rapplication/rapplication.cpp.i
+
+.PHONY : home/robocomp/robocomp/classes/rapplication/rapplication.i
+
+# target to preprocess a source file
+home/robocomp/robocomp/classes/rapplication/rapplication.cpp.i:
+	cd /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(MAKE) -f src/CMakeFiles/supervisor.dir/build.make src/CMakeFiles/supervisor.dir/home/robocomp/robocomp/classes/rapplication/rapplication.cpp.i
+.PHONY : home/robocomp/robocomp/classes/rapplication/rapplication.cpp.i
+
+home/robocomp/robocomp/classes/rapplication/rapplication.s: home/robocomp/robocomp/classes/rapplication/rapplication.cpp.s
+
+.PHONY : home/robocomp/robocomp/classes/rapplication/rapplication.s
+
+# target to generate assembly for a file
+home/robocomp/robocomp/classes/rapplication/rapplication.cpp.s:
+	cd /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(MAKE) -f src/CMakeFiles/supervisor.dir/build.make src/CMakeFiles/supervisor.dir/home/robocomp/robocomp/classes/rapplication/rapplication.cpp.s
+.PHONY : home/robocomp/robocomp/classes/rapplication/rapplication.cpp.s
 
 main.o: main.cpp.o
 
@@ -433,7 +460,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	cd /home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(MAKE) -f src/CMakeFiles/supervisor.dir/build.make src/CMakeFiles/supervisor.dir/main.cpp.o
+	cd /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(MAKE) -f src/CMakeFiles/supervisor.dir/build.make src/CMakeFiles/supervisor.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -442,7 +469,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	cd /home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(MAKE) -f src/CMakeFiles/supervisor.dir/build.make src/CMakeFiles/supervisor.dir/main.cpp.i
+	cd /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(MAKE) -f src/CMakeFiles/supervisor.dir/build.make src/CMakeFiles/supervisor.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -451,7 +478,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	cd /home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(MAKE) -f src/CMakeFiles/supervisor.dir/build.make src/CMakeFiles/supervisor.dir/main.cpp.s
+	cd /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(MAKE) -f src/CMakeFiles/supervisor.dir/build.make src/CMakeFiles/supervisor.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 specificmonitor.o: specificmonitor.cpp.o
@@ -460,7 +487,7 @@ specificmonitor.o: specificmonitor.cpp.o
 
 # target to build an object file
 specificmonitor.cpp.o:
-	cd /home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(MAKE) -f src/CMakeFiles/supervisor.dir/build.make src/CMakeFiles/supervisor.dir/specificmonitor.cpp.o
+	cd /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(MAKE) -f src/CMakeFiles/supervisor.dir/build.make src/CMakeFiles/supervisor.dir/specificmonitor.cpp.o
 .PHONY : specificmonitor.cpp.o
 
 specificmonitor.i: specificmonitor.cpp.i
@@ -469,7 +496,7 @@ specificmonitor.i: specificmonitor.cpp.i
 
 # target to preprocess a source file
 specificmonitor.cpp.i:
-	cd /home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(MAKE) -f src/CMakeFiles/supervisor.dir/build.make src/CMakeFiles/supervisor.dir/specificmonitor.cpp.i
+	cd /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(MAKE) -f src/CMakeFiles/supervisor.dir/build.make src/CMakeFiles/supervisor.dir/specificmonitor.cpp.i
 .PHONY : specificmonitor.cpp.i
 
 specificmonitor.s: specificmonitor.cpp.s
@@ -478,7 +505,7 @@ specificmonitor.s: specificmonitor.cpp.s
 
 # target to generate assembly for a file
 specificmonitor.cpp.s:
-	cd /home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(MAKE) -f src/CMakeFiles/supervisor.dir/build.make src/CMakeFiles/supervisor.dir/specificmonitor.cpp.s
+	cd /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(MAKE) -f src/CMakeFiles/supervisor.dir/build.make src/CMakeFiles/supervisor.dir/specificmonitor.cpp.s
 .PHONY : specificmonitor.cpp.s
 
 specificworker.o: specificworker.cpp.o
@@ -487,7 +514,7 @@ specificworker.o: specificworker.cpp.o
 
 # target to build an object file
 specificworker.cpp.o:
-	cd /home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(MAKE) -f src/CMakeFiles/supervisor.dir/build.make src/CMakeFiles/supervisor.dir/specificworker.cpp.o
+	cd /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(MAKE) -f src/CMakeFiles/supervisor.dir/build.make src/CMakeFiles/supervisor.dir/specificworker.cpp.o
 .PHONY : specificworker.cpp.o
 
 specificworker.i: specificworker.cpp.i
@@ -496,7 +523,7 @@ specificworker.i: specificworker.cpp.i
 
 # target to preprocess a source file
 specificworker.cpp.i:
-	cd /home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(MAKE) -f src/CMakeFiles/supervisor.dir/build.make src/CMakeFiles/supervisor.dir/specificworker.cpp.i
+	cd /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(MAKE) -f src/CMakeFiles/supervisor.dir/build.make src/CMakeFiles/supervisor.dir/specificworker.cpp.i
 .PHONY : specificworker.cpp.i
 
 specificworker.s: specificworker.cpp.s
@@ -505,7 +532,7 @@ specificworker.s: specificworker.cpp.s
 
 # target to generate assembly for a file
 specificworker.cpp.s:
-	cd /home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(MAKE) -f src/CMakeFiles/supervisor.dir/build.make src/CMakeFiles/supervisor.dir/specificworker.cpp.s
+	cd /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(MAKE) -f src/CMakeFiles/supervisor.dir/build.make src/CMakeFiles/supervisor.dir/specificworker.cpp.s
 .PHONY : specificworker.cpp.s
 
 supervisor_automoc.o: supervisor_automoc.cpp.o
@@ -514,7 +541,7 @@ supervisor_automoc.o: supervisor_automoc.cpp.o
 
 # target to build an object file
 supervisor_automoc.cpp.o:
-	cd /home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(MAKE) -f src/CMakeFiles/supervisor.dir/build.make src/CMakeFiles/supervisor.dir/supervisor_automoc.cpp.o
+	cd /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(MAKE) -f src/CMakeFiles/supervisor.dir/build.make src/CMakeFiles/supervisor.dir/supervisor_automoc.cpp.o
 .PHONY : supervisor_automoc.cpp.o
 
 supervisor_automoc.i: supervisor_automoc.cpp.i
@@ -523,7 +550,7 @@ supervisor_automoc.i: supervisor_automoc.cpp.i
 
 # target to preprocess a source file
 supervisor_automoc.cpp.i:
-	cd /home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(MAKE) -f src/CMakeFiles/supervisor.dir/build.make src/CMakeFiles/supervisor.dir/supervisor_automoc.cpp.i
+	cd /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(MAKE) -f src/CMakeFiles/supervisor.dir/build.make src/CMakeFiles/supervisor.dir/supervisor_automoc.cpp.i
 .PHONY : supervisor_automoc.cpp.i
 
 supervisor_automoc.s: supervisor_automoc.cpp.s
@@ -532,7 +559,7 @@ supervisor_automoc.s: supervisor_automoc.cpp.s
 
 # target to generate assembly for a file
 supervisor_automoc.cpp.s:
-	cd /home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(MAKE) -f src/CMakeFiles/supervisor.dir/build.make src/CMakeFiles/supervisor.dir/supervisor_automoc.cpp.s
+	cd /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(MAKE) -f src/CMakeFiles/supervisor.dir/build.make src/CMakeFiles/supervisor.dir/supervisor_automoc.cpp.s
 .PHONY : supervisor_automoc.cpp.s
 
 # Help Target
@@ -558,6 +585,9 @@ help:
 	@echo "... DifferentialRobot.o"
 	@echo "... DifferentialRobot.i"
 	@echo "... DifferentialRobot.s"
+	@echo "... GotoPoint.o"
+	@echo "... GotoPoint.i"
+	@echo "... GotoPoint.s"
 	@echo "... apriltagsI.o"
 	@echo "... apriltagsI.i"
 	@echo "... apriltagsI.s"
@@ -570,12 +600,12 @@ help:
 	@echo "... genericworker.o"
 	@echo "... genericworker.i"
 	@echo "... genericworker.s"
-	@echo "... home/salabeta/robocomp/classes/qlog/qlog.o"
-	@echo "... home/salabeta/robocomp/classes/qlog/qlog.i"
-	@echo "... home/salabeta/robocomp/classes/qlog/qlog.s"
-	@echo "... home/salabeta/robocomp/classes/rapplication/rapplication.o"
-	@echo "... home/salabeta/robocomp/classes/rapplication/rapplication.i"
-	@echo "... home/salabeta/robocomp/classes/rapplication/rapplication.s"
+	@echo "... home/robocomp/robocomp/classes/qlog/qlog.o"
+	@echo "... home/robocomp/robocomp/classes/qlog/qlog.i"
+	@echo "... home/robocomp/robocomp/classes/qlog/qlog.s"
+	@echo "... home/robocomp/robocomp/classes/rapplication/rapplication.o"
+	@echo "... home/robocomp/robocomp/classes/rapplication/rapplication.i"
+	@echo "... home/robocomp/robocomp/classes/rapplication/rapplication.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
@@ -599,6 +629,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

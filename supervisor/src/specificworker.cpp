@@ -48,21 +48,25 @@ bool SpecificWorker::setParams(RoboCompCommonBehavior::ParameterList params)
 
 void SpecificWorker::compute()
 {
-   switch( state )
-
- {
-
-   case State::SEARCH:
-
-   break;
+  switch( state )
+  {
+    case State::IDLE:
+      
+    break;
+ 
+    case State::SEARCH:
+      search();
+    break;
+   
+    case State::GOTO:
+      goPoint();
+    break;
     
-   case State::WAIT:
-     
-   break;
-     
-
+    case State::WAIT:
+      wait();
+    break;
   }
-}
+
 // 	try
 // 	{
 // 		camera_proxy->getYImage(0,img, cState, bState);
@@ -73,6 +77,44 @@ void SpecificWorker::compute()
 // 	{
 // 		std::cout << "Error reading from Camera" << e << std::endl;
 // 	}
+}
+
+
+void SpecificWorker::search()
+{
+  gotopoint_proxy->turn(0.3);
+  
+  if (tag.empty == false){
+    //gotopoint_proxy->stop();
+    
+    if (tag.id == current){
+      gotopoint_proxy->stop();
+      state = State::GOTO;
+    }
+    else{
+      tag.empty = true;
+    }
+  }
+}
+
+void SpecificWorker::goPoint()
+{
+  gotopoint_proxy->go("", tag.x, tag.z, 0);
+  state = State::WAIT;
+}
+
+
+void SpecificWorker::wait()
+{
+  if (gotopoint_proxy->atTarget()){
+    current++;
+    if (current < 4){
+      state = State::SEARCH;
+      tag.empty = true;
+    }
+    else
+      state = State::IDLE;
+  }
 }
 
 

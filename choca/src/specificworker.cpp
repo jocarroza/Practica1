@@ -234,17 +234,16 @@ float SpecificWorker::gaussian(float vr, float vx, float h)
 void SpecificWorker::go(const string& nodo, const float x, const float y, const float alpha)
 {
   target.insertarCoord(x, y);
-  activo = true;
 }
 
 void SpecificWorker::turn(const float speed)
 {
-  differentialrobot_proxy->setSpeedBase(0, 0.3);
+  differentialrobot_proxy->setSpeedBase(0, speed);
 }
 
 bool SpecificWorker::atTarget()
 {
-  return activo;
+  return target.isEmpty();
  //Calcular distancia
   // si menor que margen
       //return true
@@ -255,7 +254,6 @@ bool SpecificWorker::atTarget()
 void SpecificWorker::stop()
 {
   differentialrobot_proxy->setSpeedBase(0, 0);
-  activo = false;
 }
 
 

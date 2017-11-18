@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor
+CMAKE_SOURCE_DIR = /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor
+CMAKE_BINARY_DIR = /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor
 
 # Utility rule file for supervisor_automoc.
 
@@ -54,8 +54,8 @@ CMAKE_BINARY_DIR = /home/salabeta/robocomp/components/CarrozaGarcia/Practica1/su
 include src/CMakeFiles/supervisor_automoc.dir/progress.make
 
 src/CMakeFiles/supervisor_automoc:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic moc for target supervisor"
-	cd /home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor/src && /usr/bin/cmake -E cmake_autogen /home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/CMakeFiles/supervisor_automoc.dir/ ""
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic moc for target supervisor"
+	cd /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor/src && /usr/bin/cmake -E cmake_autogen /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/CMakeFiles/supervisor_automoc.dir/ ""
 
 supervisor_automoc: src/CMakeFiles/supervisor_automoc
 supervisor_automoc: src/CMakeFiles/supervisor_automoc.dir/build.make
@@ -68,10 +68,10 @@ src/CMakeFiles/supervisor_automoc.dir/build: supervisor_automoc
 .PHONY : src/CMakeFiles/supervisor_automoc.dir/build
 
 src/CMakeFiles/supervisor_automoc.dir/clean:
-	cd /home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor/src && $(CMAKE_COMMAND) -P CMakeFiles/supervisor_automoc.dir/cmake_clean.cmake
+	cd /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor/src && $(CMAKE_COMMAND) -P CMakeFiles/supervisor_automoc.dir/cmake_clean.cmake
 .PHONY : src/CMakeFiles/supervisor_automoc.dir/clean
 
 src/CMakeFiles/supervisor_automoc.dir/depend:
-	cd /home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor /home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor/src /home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor /home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor/src /home/salabeta/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/CMakeFiles/supervisor_automoc.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor/src /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor/src /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/CMakeFiles/supervisor_automoc.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/CMakeFiles/supervisor_automoc.dir/depend
 
