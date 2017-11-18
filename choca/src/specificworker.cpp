@@ -243,7 +243,11 @@ void SpecificWorker::turn(const float speed)
 
 bool SpecificWorker::atTarget()
 {
-  return target.isEmpty();
+  if (target.isEmpty() == true){
+    return true;
+  }else{
+    return false;
+  }
  //Calcular distancia
   // si menor que margen
       //return true

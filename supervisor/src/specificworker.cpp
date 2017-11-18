@@ -38,7 +38,7 @@ bool SpecificWorker::setParams(RoboCompCommonBehavior::ParameterList params)
 {
 
 
-
+	innermodel = new InnerModel("/home/robocomp/robocomp/files/innermodel/simpleworld.xml");
 	
 	timer.start(Period);
 	
@@ -48,6 +48,11 @@ bool SpecificWorker::setParams(RoboCompCommonBehavior::ParameterList params)
 
 void SpecificWorker::compute()
 {
+  
+  RoboCompDifferentialRobot::TBaseState bState;
+  differentialrobot_proxy->getBaseState(bState);
+  innermodel->updateTransformValues ("base",bState.x, 0, bState.z, 0, bState.alpha, 0 ); 
+  
   switch( state )
   {
     case State::IDLE:
@@ -106,14 +111,16 @@ void SpecificWorker::goPoint()
 
 void SpecificWorker::wait()
 {
-  if (gotopoint_proxy->atTarget()){
+  if (gotopoint_proxy->atTarget() == true){
+    std::cout<<"ERROR"<<endl;
     current++;
     if (current < 4){
       state = State::SEARCH;
       tag.empty = true;
     }
-    else
+    else{
       state = State::IDLE;
+    }
   }
 }
 
@@ -121,6 +128,7 @@ void SpecificWorker::wait()
 void SpecificWorker::newAprilTag(const tagsList &tags)
 {
   //std::cout<<tags[0].id<<endl;
+//   QVec tr = innermodel->transform("base", QVec::vec3(tags[0].tx, 0, tags[0].tz), "Camera");
   tag.id = tags[0].id;
   tag.x = tags[0].tx;
   tag.z = tags[0].tz;
