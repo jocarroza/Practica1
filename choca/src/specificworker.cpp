@@ -108,7 +108,7 @@ void SpecificWorker::gotoTarget()
       
     QVec tr = innermodel->transform("base", QVec::vec3(coord.first, 0, coord.second), "world");
     float d = tr.norm2();
-    if (d > 50){
+    if (d > 500){
   //       vAdv = d;
   //       if (vAdv > MAX_ADV)
   // 	vAdv = MAX_ADV;

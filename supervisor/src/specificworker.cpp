@@ -112,7 +112,7 @@ void SpecificWorker::goPoint()
 void SpecificWorker::wait()
 {
   if (gotopoint_proxy->atTarget() == true){
-    std::cout<<"ERROR"<<endl;
+    std::cout<<"SIGUIENTE TAG"<<endl;
     current++;
     if (current < 4){
       state = State::SEARCH;
@@ -128,10 +128,10 @@ void SpecificWorker::wait()
 void SpecificWorker::newAprilTag(const tagsList &tags)
 {
   //std::cout<<tags[0].id<<endl;
-//   QVec tr = innermodel->transform("base", QVec::vec3(tags[0].tx, 0, tags[0].tz), "Camera");
+  QVec tr = innermodel->transform("world", QVec::vec3(tags[0].tx, 0, tags[0].tz), "rgbd");
   tag.id = tags[0].id;
-  tag.x = tags[0].tx;
-  tag.z = tags[0].tz;
+  tag.x = tr.x();
+  tag.z = tr.z();
   tag.empty = false;
 }
 
