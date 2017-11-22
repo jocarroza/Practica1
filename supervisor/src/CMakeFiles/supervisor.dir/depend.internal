@@ -14,10 +14,10 @@ src/CMakeFiles/supervisor.dir/GotoPoint.cpp.o
  /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/GotoPoint.cpp
  src/GotoPoint.h
 src/CMakeFiles/supervisor.dir/apriltagsI.cpp.o
+ /home/jose/robocomp/classes/qlog/qlog.h
  /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/apriltagsI.cpp
  /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/apriltagsI.h
  /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/genericworker.h
- /home/salabeta/robocomp/classes/qlog/qlog.h
  /usr/include/qt4/Qt3Support/q3cstring.h
  /usr/include/qt4/Qt3Support/q3valuelist.h
  /usr/include/qt4/QtCore/QDate
@@ -450,11 +450,11 @@ src/CMakeFiles/supervisor.dir/apriltagsI.cpp.o
  src/config.h
  src/ui_mainUI.h
 src/CMakeFiles/supervisor.dir/commonbehaviorI.cpp.o
+ /home/jose/robocomp/classes/qlog/qlog.h
  /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/commonbehaviorI.cpp
  /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/commonbehaviorI.h
  /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/genericmonitor.h
  /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/genericworker.h
- /home/salabeta/robocomp/classes/qlog/qlog.h
  /usr/include/qt4/Qt3Support/q3cstring.h
  /usr/include/qt4/Qt3Support/q3valuelist.h
  /usr/include/qt4/QtCore/QDate
@@ -887,11 +887,11 @@ src/CMakeFiles/supervisor.dir/commonbehaviorI.cpp.o
  src/config.h
  src/ui_mainUI.h
 src/CMakeFiles/supervisor.dir/genericmonitor.cpp.o
+ /home/jose/robocomp/classes/qlog/qlog.h
  /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/config.h
  /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/genericmonitor.cpp
  /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/genericmonitor.h
  /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/genericworker.h
- /home/salabeta/robocomp/classes/qlog/qlog.h
  /usr/include/qt4/Qt3Support/q3cstring.h
  /usr/include/qt4/Qt3Support/q3valuelist.h
  /usr/include/qt4/QtCore/QDate
@@ -1323,10 +1323,10 @@ src/CMakeFiles/supervisor.dir/genericmonitor.cpp.o
  src/GotoPoint.h
  src/ui_mainUI.h
 src/CMakeFiles/supervisor.dir/genericworker.cpp.o
+ /home/jose/robocomp/classes/qlog/qlog.h
  /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/config.h
  /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/genericworker.cpp
  /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/genericworker.h
- /home/salabeta/robocomp/classes/qlog/qlog.h
  /usr/include/qt4/Qt3Support/q3cstring.h
  /usr/include/qt4/Qt3Support/q3valuelist.h
  /usr/include/qt4/QtCore/QDate
@@ -2109,6 +2109,8 @@ src/CMakeFiles/supervisor.dir/home/robocomp/robocomp/classes/rapplication/rappli
  /usr/include/qt4/QtCore/qwaitcondition.h
  /usr/include/qt4/QtCore/qxmlstream.h
 src/CMakeFiles/supervisor.dir/main.cpp.o
+ /home/jose/robocomp/classes/qlog/qlog.h
+ /home/jose/robocomp/classes/rapplication/rapplication.h
  /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/commonbehaviorI.h
  /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/config.h
  /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/genericmonitor.h
@@ -2116,8 +2118,6 @@ src/CMakeFiles/supervisor.dir/main.cpp.o
  /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/main.cpp
  /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/specificmonitor.h
  /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/specificworker.h
- /home/salabeta/robocomp/classes/qlog/qlog.h
- /home/salabeta/robocomp/classes/rapplication/rapplication.h
  /opt/robocomp/include/innermodel/innermodel.h
  /opt/robocomp/include/qmat/QMatAll
  /opt/robocomp/include/qmat/qcamera.h
@@ -2565,12 +2565,12 @@ src/CMakeFiles/supervisor.dir/main.cpp.o
  src/apriltagsI.h
  src/ui_mainUI.h
 src/CMakeFiles/supervisor.dir/specificmonitor.cpp.o
+ /home/jose/robocomp/classes/qlog/qlog.h
  /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/config.h
  /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/genericmonitor.h
  /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/genericworker.h
  /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/specificmonitor.cpp
  /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/specificmonitor.h
- /home/salabeta/robocomp/classes/qlog/qlog.h
  /usr/include/qt4/Qt3Support/q3cstring.h
  /usr/include/qt4/Qt3Support/q3valuelist.h
  /usr/include/qt4/QtCore/QDate
@@ -3002,9 +3002,9 @@ src/CMakeFiles/supervisor.dir/specificmonitor.cpp.o
  src/GotoPoint.h
  src/ui_mainUI.h
 src/CMakeFiles/supervisor.dir/specificworker.cpp.o
+ /home/jose/robocomp/classes/qlog/qlog.h
  /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/specificworker.cpp
  /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/specificworker.h
- /home/salabeta/robocomp/classes/qlog/qlog.h
  /opt/robocomp/include/innermodel/innermodel.h
  /opt/robocomp/include/qmat/QMatAll
  /opt/robocomp/include/qmat/qcamera.h
@@ -3453,6 +3453,7 @@ src/CMakeFiles/supervisor.dir/specificworker.cpp.o
  src/genericworker.h
  src/ui_mainUI.h
 src/CMakeFiles/supervisor.dir/supervisor_automoc.cpp.o
+ /home/jose/robocomp/classes/qlog/qlog.h
  /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/apriltagsI.h
  /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/commonbehaviorI.h
  /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/genericmonitor.h
@@ -3466,7 +3467,6 @@ src/CMakeFiles/supervisor.dir/supervisor_automoc.cpp.o
  /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/specificmonitor.h
  /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/specificworker.h
  /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/supervisor_automoc.cpp
- /home/salabeta/robocomp/classes/qlog/qlog.h
  /opt/robocomp/include/innermodel/innermodel.h
  /opt/robocomp/include/qmat/QMatAll
  /opt/robocomp/include/qmat/qcamera.h

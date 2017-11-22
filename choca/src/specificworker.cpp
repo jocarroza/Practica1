@@ -108,7 +108,7 @@ void SpecificWorker::gotoTarget()
       
     QVec tr = innermodel->transform("base", QVec::vec3(coord.first, 0, coord.second), "world");
     float d = tr.norm2();
-    if (d > 500){
+    if (d > 600){
   //       vAdv = d;
   //       if (vAdv > MAX_ADV)
   // 	vAdv = MAX_ADV;
@@ -135,11 +135,19 @@ void SpecificWorker::gotoTarget()
 
 void SpecificWorker::bug()
 {
+  float giro = 1.0;
+  
   std::sort(laserData.begin()+8, laserData.end()-8,[](auto a,auto b){return a.dist<b.dist;});
   
   
   if (laserData[8].dist < 350 || laserData[laserData.size()-8].dist < 350){
-    differentialrobot_proxy->setSpeedBase(0, 0.3);
+    
+    if (laserData[8].angle < 0)
+      giro = 1.0;
+    else
+      giro = -1.0;
+    
+    differentialrobot_proxy->setSpeedBase(0, 0.3*giro);
   }
   else{
     differentialrobot_proxy->setSpeedBase(100, 0);
@@ -160,11 +168,12 @@ bool SpecificWorker::obstacle()
 {
 std::sort(laserData.begin()+8, laserData.end()-8,[](auto a,auto b){return a.dist<b.dist;});
 
- if( laserData[8].dist < 350 || laserData[laserData.size()-8].dist < 350)
+ if( laserData[8].dist < 350 || laserData[laserData.size()-8].dist < 350){
    return true;
- else
+ }
+ else{
    return false;
-
+ }
 }
 
 bool SpecificWorker::targetAtSight()

@@ -13,10 +13,10 @@ src/CMakeFiles/supervisor.dir/DifferentialRobot.cpp.o: src/DifferentialRobot.h
 src/CMakeFiles/supervisor.dir/GotoPoint.cpp.o: src/GotoPoint.cpp
 src/CMakeFiles/supervisor.dir/GotoPoint.cpp.o: src/GotoPoint.h
 
+src/CMakeFiles/supervisor.dir/apriltagsI.cpp.o: /home/jose/robocomp/classes/qlog/qlog.h
 src/CMakeFiles/supervisor.dir/apriltagsI.cpp.o: src/apriltagsI.cpp
 src/CMakeFiles/supervisor.dir/apriltagsI.cpp.o: src/apriltagsI.h
 src/CMakeFiles/supervisor.dir/apriltagsI.cpp.o: src/genericworker.h
-src/CMakeFiles/supervisor.dir/apriltagsI.cpp.o: /home/salabeta/robocomp/classes/qlog/qlog.h
 src/CMakeFiles/supervisor.dir/apriltagsI.cpp.o: /usr/include/qt4/Qt3Support/q3cstring.h
 src/CMakeFiles/supervisor.dir/apriltagsI.cpp.o: /usr/include/qt4/Qt3Support/q3valuelist.h
 src/CMakeFiles/supervisor.dir/apriltagsI.cpp.o: /usr/include/qt4/QtCore/QDate
@@ -449,11 +449,11 @@ src/CMakeFiles/supervisor.dir/apriltagsI.cpp.o: src/GotoPoint.h
 src/CMakeFiles/supervisor.dir/apriltagsI.cpp.o: src/config.h
 src/CMakeFiles/supervisor.dir/apriltagsI.cpp.o: src/ui_mainUI.h
 
+src/CMakeFiles/supervisor.dir/commonbehaviorI.cpp.o: /home/jose/robocomp/classes/qlog/qlog.h
 src/CMakeFiles/supervisor.dir/commonbehaviorI.cpp.o: src/commonbehaviorI.cpp
 src/CMakeFiles/supervisor.dir/commonbehaviorI.cpp.o: src/commonbehaviorI.h
 src/CMakeFiles/supervisor.dir/commonbehaviorI.cpp.o: src/genericmonitor.h
 src/CMakeFiles/supervisor.dir/commonbehaviorI.cpp.o: src/genericworker.h
-src/CMakeFiles/supervisor.dir/commonbehaviorI.cpp.o: /home/salabeta/robocomp/classes/qlog/qlog.h
 src/CMakeFiles/supervisor.dir/commonbehaviorI.cpp.o: /usr/include/qt4/Qt3Support/q3cstring.h
 src/CMakeFiles/supervisor.dir/commonbehaviorI.cpp.o: /usr/include/qt4/Qt3Support/q3valuelist.h
 src/CMakeFiles/supervisor.dir/commonbehaviorI.cpp.o: /usr/include/qt4/QtCore/QDate
@@ -886,11 +886,11 @@ src/CMakeFiles/supervisor.dir/commonbehaviorI.cpp.o: src/GotoPoint.h
 src/CMakeFiles/supervisor.dir/commonbehaviorI.cpp.o: src/config.h
 src/CMakeFiles/supervisor.dir/commonbehaviorI.cpp.o: src/ui_mainUI.h
 
+src/CMakeFiles/supervisor.dir/genericmonitor.cpp.o: /home/jose/robocomp/classes/qlog/qlog.h
 src/CMakeFiles/supervisor.dir/genericmonitor.cpp.o: src/config.h
 src/CMakeFiles/supervisor.dir/genericmonitor.cpp.o: src/genericmonitor.cpp
 src/CMakeFiles/supervisor.dir/genericmonitor.cpp.o: src/genericmonitor.h
 src/CMakeFiles/supervisor.dir/genericmonitor.cpp.o: src/genericworker.h
-src/CMakeFiles/supervisor.dir/genericmonitor.cpp.o: /home/salabeta/robocomp/classes/qlog/qlog.h
 src/CMakeFiles/supervisor.dir/genericmonitor.cpp.o: /usr/include/qt4/Qt3Support/q3cstring.h
 src/CMakeFiles/supervisor.dir/genericmonitor.cpp.o: /usr/include/qt4/Qt3Support/q3valuelist.h
 src/CMakeFiles/supervisor.dir/genericmonitor.cpp.o: /usr/include/qt4/QtCore/QDate
@@ -1322,10 +1322,10 @@ src/CMakeFiles/supervisor.dir/genericmonitor.cpp.o: src/DifferentialRobot.h
 src/CMakeFiles/supervisor.dir/genericmonitor.cpp.o: src/GotoPoint.h
 src/CMakeFiles/supervisor.dir/genericmonitor.cpp.o: src/ui_mainUI.h
 
+src/CMakeFiles/supervisor.dir/genericworker.cpp.o: /home/jose/robocomp/classes/qlog/qlog.h
 src/CMakeFiles/supervisor.dir/genericworker.cpp.o: src/config.h
 src/CMakeFiles/supervisor.dir/genericworker.cpp.o: src/genericworker.cpp
 src/CMakeFiles/supervisor.dir/genericworker.cpp.o: src/genericworker.h
-src/CMakeFiles/supervisor.dir/genericworker.cpp.o: /home/salabeta/robocomp/classes/qlog/qlog.h
 src/CMakeFiles/supervisor.dir/genericworker.cpp.o: /usr/include/qt4/Qt3Support/q3cstring.h
 src/CMakeFiles/supervisor.dir/genericworker.cpp.o: /usr/include/qt4/Qt3Support/q3valuelist.h
 src/CMakeFiles/supervisor.dir/genericworker.cpp.o: /usr/include/qt4/QtCore/QDate
@@ -2108,6 +2108,8 @@ src/CMakeFiles/supervisor.dir/home/robocomp/robocomp/classes/rapplication/rappli
 src/CMakeFiles/supervisor.dir/home/robocomp/robocomp/classes/rapplication/rapplication.cpp.o: /usr/include/qt4/QtCore/qwaitcondition.h
 src/CMakeFiles/supervisor.dir/home/robocomp/robocomp/classes/rapplication/rapplication.cpp.o: /usr/include/qt4/QtCore/qxmlstream.h
 
+src/CMakeFiles/supervisor.dir/main.cpp.o: /home/jose/robocomp/classes/qlog/qlog.h
+src/CMakeFiles/supervisor.dir/main.cpp.o: /home/jose/robocomp/classes/rapplication/rapplication.h
 src/CMakeFiles/supervisor.dir/main.cpp.o: src/commonbehaviorI.h
 src/CMakeFiles/supervisor.dir/main.cpp.o: src/config.h
 src/CMakeFiles/supervisor.dir/main.cpp.o: src/genericmonitor.h
@@ -2115,8 +2117,6 @@ src/CMakeFiles/supervisor.dir/main.cpp.o: src/genericworker.h
 src/CMakeFiles/supervisor.dir/main.cpp.o: src/main.cpp
 src/CMakeFiles/supervisor.dir/main.cpp.o: src/specificmonitor.h
 src/CMakeFiles/supervisor.dir/main.cpp.o: src/specificworker.h
-src/CMakeFiles/supervisor.dir/main.cpp.o: /home/salabeta/robocomp/classes/qlog/qlog.h
-src/CMakeFiles/supervisor.dir/main.cpp.o: /home/salabeta/robocomp/classes/rapplication/rapplication.h
 src/CMakeFiles/supervisor.dir/main.cpp.o: /opt/robocomp/include/innermodel/innermodel.h
 src/CMakeFiles/supervisor.dir/main.cpp.o: /opt/robocomp/include/qmat/QMatAll
 src/CMakeFiles/supervisor.dir/main.cpp.o: /opt/robocomp/include/qmat/qcamera.h
@@ -2564,12 +2564,12 @@ src/CMakeFiles/supervisor.dir/main.cpp.o: src/GotoPoint.h
 src/CMakeFiles/supervisor.dir/main.cpp.o: src/apriltagsI.h
 src/CMakeFiles/supervisor.dir/main.cpp.o: src/ui_mainUI.h
 
+src/CMakeFiles/supervisor.dir/specificmonitor.cpp.o: /home/jose/robocomp/classes/qlog/qlog.h
 src/CMakeFiles/supervisor.dir/specificmonitor.cpp.o: src/config.h
 src/CMakeFiles/supervisor.dir/specificmonitor.cpp.o: src/genericmonitor.h
 src/CMakeFiles/supervisor.dir/specificmonitor.cpp.o: src/genericworker.h
 src/CMakeFiles/supervisor.dir/specificmonitor.cpp.o: src/specificmonitor.cpp
 src/CMakeFiles/supervisor.dir/specificmonitor.cpp.o: src/specificmonitor.h
-src/CMakeFiles/supervisor.dir/specificmonitor.cpp.o: /home/salabeta/robocomp/classes/qlog/qlog.h
 src/CMakeFiles/supervisor.dir/specificmonitor.cpp.o: /usr/include/qt4/Qt3Support/q3cstring.h
 src/CMakeFiles/supervisor.dir/specificmonitor.cpp.o: /usr/include/qt4/Qt3Support/q3valuelist.h
 src/CMakeFiles/supervisor.dir/specificmonitor.cpp.o: /usr/include/qt4/QtCore/QDate
@@ -3001,9 +3001,9 @@ src/CMakeFiles/supervisor.dir/specificmonitor.cpp.o: src/DifferentialRobot.h
 src/CMakeFiles/supervisor.dir/specificmonitor.cpp.o: src/GotoPoint.h
 src/CMakeFiles/supervisor.dir/specificmonitor.cpp.o: src/ui_mainUI.h
 
+src/CMakeFiles/supervisor.dir/specificworker.cpp.o: /home/jose/robocomp/classes/qlog/qlog.h
 src/CMakeFiles/supervisor.dir/specificworker.cpp.o: src/specificworker.cpp
 src/CMakeFiles/supervisor.dir/specificworker.cpp.o: src/specificworker.h
-src/CMakeFiles/supervisor.dir/specificworker.cpp.o: /home/salabeta/robocomp/classes/qlog/qlog.h
 src/CMakeFiles/supervisor.dir/specificworker.cpp.o: /opt/robocomp/include/innermodel/innermodel.h
 src/CMakeFiles/supervisor.dir/specificworker.cpp.o: /opt/robocomp/include/qmat/QMatAll
 src/CMakeFiles/supervisor.dir/specificworker.cpp.o: /opt/robocomp/include/qmat/qcamera.h
@@ -3452,6 +3452,7 @@ src/CMakeFiles/supervisor.dir/specificworker.cpp.o: src/config.h
 src/CMakeFiles/supervisor.dir/specificworker.cpp.o: src/genericworker.h
 src/CMakeFiles/supervisor.dir/specificworker.cpp.o: src/ui_mainUI.h
 
+src/CMakeFiles/supervisor.dir/supervisor_automoc.cpp.o: /home/jose/robocomp/classes/qlog/qlog.h
 src/CMakeFiles/supervisor.dir/supervisor_automoc.cpp.o: src/apriltagsI.h
 src/CMakeFiles/supervisor.dir/supervisor_automoc.cpp.o: src/commonbehaviorI.h
 src/CMakeFiles/supervisor.dir/supervisor_automoc.cpp.o: src/genericmonitor.h
@@ -3465,7 +3466,6 @@ src/CMakeFiles/supervisor.dir/supervisor_automoc.cpp.o: src/moc_specificworker.c
 src/CMakeFiles/supervisor.dir/supervisor_automoc.cpp.o: src/specificmonitor.h
 src/CMakeFiles/supervisor.dir/supervisor_automoc.cpp.o: src/specificworker.h
 src/CMakeFiles/supervisor.dir/supervisor_automoc.cpp.o: src/supervisor_automoc.cpp
-src/CMakeFiles/supervisor.dir/supervisor_automoc.cpp.o: /home/salabeta/robocomp/classes/qlog/qlog.h
 src/CMakeFiles/supervisor.dir/supervisor_automoc.cpp.o: /opt/robocomp/include/innermodel/innermodel.h
 src/CMakeFiles/supervisor.dir/supervisor_automoc.cpp.o: /opt/robocomp/include/qmat/QMatAll
 src/CMakeFiles/supervisor.dir/supervisor_automoc.cpp.o: /opt/robocomp/include/qmat/qcamera.h
