@@ -18,7 +18,6 @@ src/CMakeFiles/choca.dir/RCISMousePicker.cpp.o
  /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/choca/src/RCISMousePicker.cpp
  src/RCISMousePicker.h
 src/CMakeFiles/choca.dir/choca_automoc.cpp.o
- /home/jose/robocomp/classes/qlog/qlog.h
  /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/choca/src/choca_automoc.cpp
  /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/choca/src/commonbehaviorI.h
  /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/choca/src/genericmonitor.h
@@ -34,6 +33,7 @@ src/CMakeFiles/choca.dir/choca_automoc.cpp.o
  /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/choca/src/rcismousepickerI.h
  /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/choca/src/specificmonitor.h
  /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/choca/src/specificworker.h
+ /home/salabeta/robocomp/classes/qlog/qlog.h
  /opt/robocomp/include/innermodel/innermodel.h
  /opt/robocomp/include/qmat/QMatAll
  /opt/robocomp/include/qmat/qcamera.h
@@ -482,11 +482,11 @@ src/CMakeFiles/choca.dir/choca_automoc.cpp.o
  src/config.h
  src/ui_mainUI.h
 src/CMakeFiles/choca.dir/commonbehaviorI.cpp.o
- /home/jose/robocomp/classes/qlog/qlog.h
  /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/choca/src/commonbehaviorI.cpp
  /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/choca/src/commonbehaviorI.h
  /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/choca/src/genericmonitor.h
  /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/choca/src/genericworker.h
+ /home/salabeta/robocomp/classes/qlog/qlog.h
  /usr/include/qt4/Qt3Support/q3cstring.h
  /usr/include/qt4/Qt3Support/q3valuelist.h
  /usr/include/qt4/QtCore/QDate
@@ -920,11 +920,11 @@ src/CMakeFiles/choca.dir/commonbehaviorI.cpp.o
  src/config.h
  src/ui_mainUI.h
 src/CMakeFiles/choca.dir/genericmonitor.cpp.o
- /home/jose/robocomp/classes/qlog/qlog.h
  /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/choca/src/config.h
  /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/choca/src/genericmonitor.cpp
  /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/choca/src/genericmonitor.h
  /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/choca/src/genericworker.h
+ /home/salabeta/robocomp/classes/qlog/qlog.h
  /usr/include/qt4/Qt3Support/q3cstring.h
  /usr/include/qt4/Qt3Support/q3valuelist.h
  /usr/include/qt4/QtCore/QDate
@@ -1357,10 +1357,10 @@ src/CMakeFiles/choca.dir/genericmonitor.cpp.o
  src/RCISMousePicker.h
  src/ui_mainUI.h
 src/CMakeFiles/choca.dir/genericworker.cpp.o
- /home/jose/robocomp/classes/qlog/qlog.h
  /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/choca/src/config.h
  /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/choca/src/genericworker.cpp
  /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/choca/src/genericworker.h
+ /home/salabeta/robocomp/classes/qlog/qlog.h
  /usr/include/qt4/Qt3Support/q3cstring.h
  /usr/include/qt4/Qt3Support/q3valuelist.h
  /usr/include/qt4/QtCore/QDate
@@ -1793,10 +1793,10 @@ src/CMakeFiles/choca.dir/genericworker.cpp.o
  src/RCISMousePicker.h
  src/ui_mainUI.h
 src/CMakeFiles/choca.dir/gotopointI.cpp.o
- /home/jose/robocomp/classes/qlog/qlog.h
  /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/choca/src/genericworker.h
  /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/choca/src/gotopointI.cpp
  /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/choca/src/gotopointI.h
+ /home/salabeta/robocomp/classes/qlog/qlog.h
  /usr/include/qt4/Qt3Support/q3cstring.h
  /usr/include/qt4/Qt3Support/q3valuelist.h
  /usr/include/qt4/QtCore/QDate
@@ -2581,8 +2581,6 @@ src/CMakeFiles/choca.dir/home/robocomp/robocomp/classes/rapplication/rapplicatio
  /usr/include/qt4/QtCore/qwaitcondition.h
  /usr/include/qt4/QtCore/qxmlstream.h
 src/CMakeFiles/choca.dir/main.cpp.o
- /home/jose/robocomp/classes/qlog/qlog.h
- /home/jose/robocomp/classes/rapplication/rapplication.h
  /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/choca/src/commonbehaviorI.h
  /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/choca/src/config.h
  /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/choca/src/genericmonitor.h
@@ -2590,6 +2588,8 @@ src/CMakeFiles/choca.dir/main.cpp.o
  /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/choca/src/main.cpp
  /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/choca/src/specificmonitor.h
  /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/choca/src/specificworker.h
+ /home/salabeta/robocomp/classes/qlog/qlog.h
+ /home/salabeta/robocomp/classes/rapplication/rapplication.h
  /opt/robocomp/include/innermodel/innermodel.h
  /opt/robocomp/include/qmat/QMatAll
  /opt/robocomp/include/qmat/qcamera.h
@@ -3039,10 +3039,10 @@ src/CMakeFiles/choca.dir/main.cpp.o
  src/rcismousepickerI.h
  src/ui_mainUI.h
 src/CMakeFiles/choca.dir/rcismousepickerI.cpp.o
- /home/jose/robocomp/classes/qlog/qlog.h
  /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/choca/src/genericworker.h
  /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/choca/src/rcismousepickerI.cpp
  /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/choca/src/rcismousepickerI.h
+ /home/salabeta/robocomp/classes/qlog/qlog.h
  /usr/include/qt4/Qt3Support/q3cstring.h
  /usr/include/qt4/Qt3Support/q3valuelist.h
  /usr/include/qt4/QtCore/QDate
@@ -3476,12 +3476,12 @@ src/CMakeFiles/choca.dir/rcismousepickerI.cpp.o
  src/config.h
  src/ui_mainUI.h
 src/CMakeFiles/choca.dir/specificmonitor.cpp.o
- /home/jose/robocomp/classes/qlog/qlog.h
  /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/choca/src/config.h
  /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/choca/src/genericmonitor.h
  /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/choca/src/genericworker.h
  /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/choca/src/specificmonitor.cpp
  /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/choca/src/specificmonitor.h
+ /home/salabeta/robocomp/classes/qlog/qlog.h
  /usr/include/qt4/Qt3Support/q3cstring.h
  /usr/include/qt4/Qt3Support/q3valuelist.h
  /usr/include/qt4/QtCore/QDate
@@ -3914,9 +3914,9 @@ src/CMakeFiles/choca.dir/specificmonitor.cpp.o
  src/RCISMousePicker.h
  src/ui_mainUI.h
 src/CMakeFiles/choca.dir/specificworker.cpp.o
- /home/jose/robocomp/classes/qlog/qlog.h
  /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/choca/src/specificworker.cpp
  /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/choca/src/specificworker.h
+ /home/salabeta/robocomp/classes/qlog/qlog.h
  /opt/robocomp/include/innermodel/innermodel.h
  /opt/robocomp/include/qmat/QMatAll
  /opt/robocomp/include/qmat/qcamera.h

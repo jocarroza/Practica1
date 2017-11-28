@@ -92,12 +92,19 @@ void SpecificWorker::search()
   if (tag.empty == false){
     //gotopoint_proxy->stop();
     
-    if (tag.id == current){
+      
+    if (tag.id >=10 && caja == true){
       gotopoint_proxy->stop();
       state = State::GOTO;
     }
     else{
+      if (tag.id == 0 && caja == false){
+      gotopoint_proxy->stop();
+      state = State::GOTO;
+      }
+      else{
       tag.empty = true;
+      }
     }
   }
 }
@@ -112,9 +119,10 @@ void SpecificWorker::goPoint()
 void SpecificWorker::wait()
 {
   if (gotopoint_proxy->atTarget() == true){
+    caja = !caja;
     std::cout<<"SIGUIENTE TAG"<<endl;
-    current++;
-    if (current < 4){
+    
+    if (caja == false){
       state = State::SEARCH;
       tag.empty = true;
     }

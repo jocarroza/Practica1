@@ -63,6 +63,7 @@ private:
 	};
 	
 	int current = 0;
+	bool caja = true;
 	Tag tag;
 	
 	void search();
