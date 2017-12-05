@@ -34,7 +34,7 @@ SET ( SOURCES
 
 #ROBOCOMP
 ROBOCOMP_INITIALIZE( $ENV{ROBOCOMP}/ )
-ROBOCOMP_WRAP_ICE( CommonBehavior Laser DifferentialRobot DifferentialRobot RCISMousePicker GotoPoint )
+ROBOCOMP_WRAP_ICE( CommonBehavior Laser DifferentialRobot DifferentialRobot RCISMousePicker GotoPoint JointMotor )
 SET (EXECUTABLE_OUTPUT_PATH ${RC_COMPONENT_DEVEL_PATH}/bin)
 
 # Qt4

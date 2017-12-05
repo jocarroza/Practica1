@@ -57,6 +57,8 @@ public slots:
 	virtual void turn(const float speed);
 	virtual bool atTarget();
 	virtual void stop();
+	virtual void picking_box();
+	virtual void releasing_box();
 	virtual void setPick(const Pick &myPick);
 
 private:

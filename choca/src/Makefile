@@ -265,6 +265,33 @@ GotoPoint.cpp.s:
 	cd /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/choca && $(MAKE) -f src/CMakeFiles/choca.dir/build.make src/CMakeFiles/choca.dir/GotoPoint.cpp.s
 .PHONY : GotoPoint.cpp.s
 
+JointMotor.o: JointMotor.cpp.o
+
+.PHONY : JointMotor.o
+
+# target to build an object file
+JointMotor.cpp.o:
+	cd /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/choca && $(MAKE) -f src/CMakeFiles/choca.dir/build.make src/CMakeFiles/choca.dir/JointMotor.cpp.o
+.PHONY : JointMotor.cpp.o
+
+JointMotor.i: JointMotor.cpp.i
+
+.PHONY : JointMotor.i
+
+# target to preprocess a source file
+JointMotor.cpp.i:
+	cd /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/choca && $(MAKE) -f src/CMakeFiles/choca.dir/build.make src/CMakeFiles/choca.dir/JointMotor.cpp.i
+.PHONY : JointMotor.cpp.i
+
+JointMotor.s: JointMotor.cpp.s
+
+.PHONY : JointMotor.s
+
+# target to generate assembly for a file
+JointMotor.cpp.s:
+	cd /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/choca && $(MAKE) -f src/CMakeFiles/choca.dir/build.make src/CMakeFiles/choca.dir/JointMotor.cpp.s
+.PHONY : JointMotor.cpp.s
+
 Laser.o: Laser.cpp.o
 
 .PHONY : Laser.o
@@ -639,6 +666,9 @@ help:
 	@echo "... GotoPoint.o"
 	@echo "... GotoPoint.i"
 	@echo "... GotoPoint.s"
+	@echo "... JointMotor.o"
+	@echo "... JointMotor.i"
+	@echo "... JointMotor.s"
 	@echo "... Laser.o"
 	@echo "... Laser.i"
 	@echo "... Laser.s"

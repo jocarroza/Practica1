@@ -7,6 +7,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/robocomp/robocomp/components/CarrozaGarcia/Practica1/choca/src/CommonBehavior.cpp" "/home/robocomp/robocomp/components/CarrozaGarcia/Practica1/choca/src/CMakeFiles/choca.dir/CommonBehavior.cpp.o"
   "/home/robocomp/robocomp/components/CarrozaGarcia/Practica1/choca/src/DifferentialRobot.cpp" "/home/robocomp/robocomp/components/CarrozaGarcia/Practica1/choca/src/CMakeFiles/choca.dir/DifferentialRobot.cpp.o"
   "/home/robocomp/robocomp/components/CarrozaGarcia/Practica1/choca/src/GotoPoint.cpp" "/home/robocomp/robocomp/components/CarrozaGarcia/Practica1/choca/src/CMakeFiles/choca.dir/GotoPoint.cpp.o"
+  "/home/robocomp/robocomp/components/CarrozaGarcia/Practica1/choca/src/JointMotor.cpp" "/home/robocomp/robocomp/components/CarrozaGarcia/Practica1/choca/src/CMakeFiles/choca.dir/JointMotor.cpp.o"
   "/home/robocomp/robocomp/components/CarrozaGarcia/Practica1/choca/src/Laser.cpp" "/home/robocomp/robocomp/components/CarrozaGarcia/Practica1/choca/src/CMakeFiles/choca.dir/Laser.cpp.o"
   "/home/robocomp/robocomp/components/CarrozaGarcia/Practica1/choca/src/RCISMousePicker.cpp" "/home/robocomp/robocomp/components/CarrozaGarcia/Practica1/choca/src/CMakeFiles/choca.dir/RCISMousePicker.cpp.o"
   "/home/robocomp/robocomp/components/CarrozaGarcia/Practica1/choca/src/choca_automoc.cpp" "/home/robocomp/robocomp/components/CarrozaGarcia/Practica1/choca/src/CMakeFiles/choca.dir/choca_automoc.cpp.o"
@@ -56,6 +57,7 @@ set(CMAKE_MULTIPLE_OUTPUT_PAIRS
   "/home/robocomp/robocomp/components/CarrozaGarcia/Practica1/choca/src/CommonBehavior.h" "/home/robocomp/robocomp/components/CarrozaGarcia/Practica1/choca/src/CommonBehavior.cpp"
   "/home/robocomp/robocomp/components/CarrozaGarcia/Practica1/choca/src/DifferentialRobot.h" "/home/robocomp/robocomp/components/CarrozaGarcia/Practica1/choca/src/DifferentialRobot.cpp"
   "/home/robocomp/robocomp/components/CarrozaGarcia/Practica1/choca/src/GotoPoint.h" "/home/robocomp/robocomp/components/CarrozaGarcia/Practica1/choca/src/GotoPoint.cpp"
+  "/home/robocomp/robocomp/components/CarrozaGarcia/Practica1/choca/src/JointMotor.h" "/home/robocomp/robocomp/components/CarrozaGarcia/Practica1/choca/src/JointMotor.cpp"
   "/home/robocomp/robocomp/components/CarrozaGarcia/Practica1/choca/src/Laser.h" "/home/robocomp/robocomp/components/CarrozaGarcia/Practica1/choca/src/Laser.cpp"
   "/home/robocomp/robocomp/components/CarrozaGarcia/Practica1/choca/src/RCISMousePicker.h" "/home/robocomp/robocomp/components/CarrozaGarcia/Practica1/choca/src/RCISMousePicker.cpp"
   )

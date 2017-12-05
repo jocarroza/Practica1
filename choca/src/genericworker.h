@@ -31,7 +31,9 @@
 #include <DifferentialRobot.h>
 #include <RCISMousePicker.h>
 #include <Laser.h>
+#include <JointMotor.h>
 
+#include <IceStorm/IceStorm.h>
 
 
 #define CHECK_PERIOD 5000
@@ -45,6 +47,7 @@ using namespace RoboCompGotoPoint;
 using namespace RoboCompDifferentialRobot;
 using namespace RoboCompRCISMousePicker;
 using namespace RoboCompLaser;
+using namespace RoboCompJointMotor;
 
 
 
@@ -69,11 +72,15 @@ public:
 
 	DifferentialRobotPrx differentialrobot_proxy;
 	LaserPrx laser_proxy;
+	JointMotorPrx jointmotor_proxy;
+// 	IceStorm::TopicManagerPrx topicmanager_proxy;
 
-	virtual void go(const string &nodo, const float x, const float y, const float alpha) = 0;
-	virtual void turn(const float speed) = 0;
-	virtual bool atTarget() = 0;
+	virtual void picking_box() = 0;
+	virtual void releasing_box() = 0;
 	virtual void stop() = 0;
+	virtual bool atTarget() = 0;
+	virtual void turn(const float speed) = 0;
+	virtual void go(const string &nodo, const float x, const float y, const float alpha) = 0;
 	virtual void setPick(const Pick &myPick) = 0;
 
 
@@ -81,8 +88,13 @@ protected:
 	QTimer timer;
 	int Period;
 
+// 	QTimer storm_timer;
+// 	int storm_period;
+
 public slots:
 	virtual void compute() = 0;
+// 	void check_storm();
+
 signals:
 	void kill();
 };

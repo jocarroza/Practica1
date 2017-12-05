@@ -269,6 +269,16 @@ void SpecificWorker::stop()
   differentialrobot_proxy->setSpeedBase(0, 0);
 }
 
+void SpecificWorker::picking_box()
+{
+
+}
+
+void SpecificWorker::releasing_box()
+{
+
+}
+
 
 void SpecificWorker::setPick(const Pick& myPick)
 {

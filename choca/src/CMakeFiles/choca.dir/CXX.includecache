@@ -76,6 +76,20 @@ Ice/Object.h
 IceUtil/Iterator.h
 -
 
+/home/robocomp/robocomp/components/CarrozaGarcia/Practica1/choca/src/JointMotor.cpp
+JointMotor.h
+-
+Ice/LocalException.h
+-
+Ice/ObjectFactory.h
+-
+Ice/BasicStream.h
+-
+Ice/Object.h
+-
+IceUtil/Iterator.h
+-
+
 /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/choca/src/Laser.cpp
 Laser.h
 -
@@ -183,6 +197,10 @@ RCISMousePicker.h
 -
 Laser.h
 -
+JointMotor.h
+-
+IceStorm/IceStorm.h
+-
 
 /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/choca/src/gotopointI.cpp
 gotopointI.h
@@ -240,6 +258,8 @@ DifferentialRobot.h
 RCISMousePicker.h
 -
 GotoPoint.h
+-
+JointMotor.h
 -
 
 /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/choca/src/moc_commonbehaviorI.cpp
@@ -4388,6 +4408,40 @@ Ice/StreamF.h
 Ice/UndefSysMacros.h
 -
 
+src/JointMotor.h
+Ice/ProxyF.h
+-
+Ice/ObjectF.h
+-
+Ice/Exception.h
+-
+Ice/LocalObject.h
+-
+Ice/StreamHelpers.h
+-
+Ice/Proxy.h
+-
+Ice/Object.h
+-
+Ice/Outgoing.h
+-
+Ice/OutgoingAsync.h
+-
+Ice/Incoming.h
+-
+Ice/Direct.h
+-
+Ice/FactoryTableInit.h
+-
+IceUtil/ScopedArray.h
+-
+IceUtil/Optional.h
+-
+Ice/StreamF.h
+-
+Ice/UndefSysMacros.h
+-
+
 src/Laser.h
 Ice/ProxyF.h
 -
@@ -4478,6 +4532,10 @@ DifferentialRobot.h
 RCISMousePicker.h
 -
 Laser.h
+-
+JointMotor.h
+-
+IceStorm/IceStorm.h
 -
 
 src/gotopointI.h
