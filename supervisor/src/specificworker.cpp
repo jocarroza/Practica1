@@ -67,6 +67,14 @@ void SpecificWorker::compute()
       goPoint();
     break;
     
+    case State::PICK:
+      
+    break;
+      
+    case State::RELEASE:
+      
+    break;
+    
     case State::WAIT:
       wait();
     break;
@@ -116,6 +124,18 @@ void SpecificWorker::goPoint()
 }
 
 
+void SpecificWorker::pick_box()
+{
+//   gotopoint_proxy->picking_box();
+  
+}
+
+void SpecificWorker::release_box()
+{
+//   gotopoint_proxy->releasing_box();
+}
+
+
 void SpecificWorker::wait()
 {
   if (gotopoint_proxy->atTarget() == true){
@@ -127,7 +147,8 @@ void SpecificWorker::wait()
       tag.empty = true;
     }
     else{
-      state = State::IDLE;
+      state = State::SEARCH;
+      tag.empty = true;
     }
   }
 }
