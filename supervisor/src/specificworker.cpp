@@ -53,6 +53,38 @@ void SpecificWorker::compute()
   differentialrobot_proxy->getBaseState(bState);
   innermodel->updateTransformValues ("base",bState.x, 0, bState.z, 0, bState.alpha, 0 ); 
   
+  auto tags = getapriltags_proxy->checkMarcas();
+  
+  if (tag.empty == true){
+      int i=0;
+      
+      
+      for (auto t : tags){
+	QVec tr = innermodel->transform("world", QVec::vec3(tags[i].tx, 0, tags[i].tz), "rgbd");
+	if (caja == true){
+	  if (tags[i].id > 10){
+	    tag.id = tags[i].id;
+	    tag.x = tr.x();
+	    tag.z = tr.z();
+	    tag.empty = false;
+	    return;
+	  }
+	  else{
+	    i++;
+	  }
+	}
+	if (caja == false){
+	  if (tags[i].id < 10){
+	    tag.id = tags[0].id;
+	    tag.x = tr.x();
+	    tag.z = tr.z();
+	    tag.empty = false;
+	    return;
+	  }
+	}
+      }
+  }
+  
   switch( state )
   {
     case State::IDLE:
@@ -154,42 +186,42 @@ void SpecificWorker::wait()
 }
 
 
-void SpecificWorker::newAprilTag(const tagsList &tags)
-{
-  //std::cout<<tags[0].id<<endl;
-  
-    if (tag.empty == true){
-      int i=0;
-      
-      
-      for (auto t : tags){
-	QVec tr = innermodel->transform("world", QVec::vec3(tags[i].tx, 0, tags[i].tz), "rgbd");
-	if (caja == true){
-	  if (tags[i].id > 10){
-	    tag.id = tags[i].id;
-	    tag.x = tr.x();
-	    tag.z = tr.z();
-	    tag.empty = false;
-	    return;
-	  }
-	  else{
-	    i++;
-	  }
-	}
-	if (caja == false){
-	  if (tags[i].id < 10){
-	    tag.id = tags[0].id;
-	    tag.x = tr.x();
-	    tag.z = tr.z();
-	    tag.empty = false;
-	    return;
-	  }
-	}
-      }
-	
-	
-    }
-}
+// void SpecificWorker::newAprilTag(const tagsList &tags)
+// {
+//   //std::cout<<tags[0].id<<endl;
+//   
+//     if (tag.empty == true){
+//       int i=0;
+//       
+//       
+//       for (auto t : tags){
+// 	QVec tr = innermodel->transform("world", QVec::vec3(tags[i].tx, 0, tags[i].tz), "rgbd");
+// 	if (caja == true){
+// 	  if (tags[i].id > 10){
+// 	    tag.id = tags[i].id;
+// 	    tag.x = tr.x();
+// 	    tag.z = tr.z();
+// 	    tag.empty = false;
+// 	    return;
+// 	  }
+// 	  else{
+// 	    i++;
+// 	  }
+// 	}
+// 	if (caja == false){
+// 	  if (tags[i].id < 10){
+// 	    tag.id = tags[0].id;
+// 	    tag.x = tr.x();
+// 	    tag.z = tr.z();
+// 	    tag.empty = false;
+// 	    return;
+// 	  }
+// 	}
+//    }
+// 	
+// 	
+//   }
+// }
 
 
 

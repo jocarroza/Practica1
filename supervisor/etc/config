@@ -6,6 +6,7 @@ AprilTagsTopic.Endpoints=tcp -p 13000
 
 
 # Proxies for required interfaces
+GetAprilTagsProxy = getapriltags:tcp -h localhost -p 14310
 DifferentialRobotProxy = differentialrobot:tcp -h localhost -p 10004
 GotoPointProxy = gotopoint:tcp -h localhost -p 14000
 

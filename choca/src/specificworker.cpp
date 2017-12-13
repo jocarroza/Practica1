@@ -271,7 +271,7 @@ void SpecificWorker::stop()
 
 void SpecificWorker::picking_box()
 {
-  
+ 
 }
 
 void SpecificWorker::releasing_box()

@@ -7,6 +7,9 @@ src/CMakeFiles/choca.dir/CommonBehavior.cpp.o: src/CommonBehavior.h
 src/CMakeFiles/choca.dir/DifferentialRobot.cpp.o: src/DifferentialRobot.cpp
 src/CMakeFiles/choca.dir/DifferentialRobot.cpp.o: src/DifferentialRobot.h
 
+src/CMakeFiles/choca.dir/GetAprilTags.cpp.o: src/GetAprilTags.cpp
+src/CMakeFiles/choca.dir/GetAprilTags.cpp.o: src/GetAprilTags.h
+
 src/CMakeFiles/choca.dir/GotoPoint.cpp.o: src/GotoPoint.cpp
 src/CMakeFiles/choca.dir/GotoPoint.cpp.o: src/GotoPoint.h
 
@@ -478,6 +481,7 @@ src/CMakeFiles/choca.dir/choca_automoc.cpp.o: /usr/include/qt4/QtGui/qworkspace.
 src/CMakeFiles/choca.dir/choca_automoc.cpp.o: /usr/include/qt4/QtGui/qwsembedwidget.h
 src/CMakeFiles/choca.dir/choca_automoc.cpp.o: src/CommonBehavior.h
 src/CMakeFiles/choca.dir/choca_automoc.cpp.o: src/DifferentialRobot.h
+src/CMakeFiles/choca.dir/choca_automoc.cpp.o: src/GetAprilTags.h
 src/CMakeFiles/choca.dir/choca_automoc.cpp.o: src/GotoPoint.h
 src/CMakeFiles/choca.dir/choca_automoc.cpp.o: src/JointMotor.h
 src/CMakeFiles/choca.dir/choca_automoc.cpp.o: src/Laser.h
@@ -917,6 +921,7 @@ src/CMakeFiles/choca.dir/commonbehaviorI.cpp.o: /usr/include/qt4/QtGui/qworkspac
 src/CMakeFiles/choca.dir/commonbehaviorI.cpp.o: /usr/include/qt4/QtGui/qwsembedwidget.h
 src/CMakeFiles/choca.dir/commonbehaviorI.cpp.o: src/CommonBehavior.h
 src/CMakeFiles/choca.dir/commonbehaviorI.cpp.o: src/DifferentialRobot.h
+src/CMakeFiles/choca.dir/commonbehaviorI.cpp.o: src/GetAprilTags.h
 src/CMakeFiles/choca.dir/commonbehaviorI.cpp.o: src/GotoPoint.h
 src/CMakeFiles/choca.dir/commonbehaviorI.cpp.o: src/JointMotor.h
 src/CMakeFiles/choca.dir/commonbehaviorI.cpp.o: src/Laser.h
@@ -1356,6 +1361,7 @@ src/CMakeFiles/choca.dir/genericmonitor.cpp.o: /usr/include/qt4/QtGui/qworkspace
 src/CMakeFiles/choca.dir/genericmonitor.cpp.o: /usr/include/qt4/QtGui/qwsembedwidget.h
 src/CMakeFiles/choca.dir/genericmonitor.cpp.o: src/CommonBehavior.h
 src/CMakeFiles/choca.dir/genericmonitor.cpp.o: src/DifferentialRobot.h
+src/CMakeFiles/choca.dir/genericmonitor.cpp.o: src/GetAprilTags.h
 src/CMakeFiles/choca.dir/genericmonitor.cpp.o: src/GotoPoint.h
 src/CMakeFiles/choca.dir/genericmonitor.cpp.o: src/JointMotor.h
 src/CMakeFiles/choca.dir/genericmonitor.cpp.o: src/Laser.h
@@ -1793,6 +1799,7 @@ src/CMakeFiles/choca.dir/genericworker.cpp.o: /usr/include/qt4/QtGui/qworkspace.
 src/CMakeFiles/choca.dir/genericworker.cpp.o: /usr/include/qt4/QtGui/qwsembedwidget.h
 src/CMakeFiles/choca.dir/genericworker.cpp.o: src/CommonBehavior.h
 src/CMakeFiles/choca.dir/genericworker.cpp.o: src/DifferentialRobot.h
+src/CMakeFiles/choca.dir/genericworker.cpp.o: src/GetAprilTags.h
 src/CMakeFiles/choca.dir/genericworker.cpp.o: src/GotoPoint.h
 src/CMakeFiles/choca.dir/genericworker.cpp.o: src/JointMotor.h
 src/CMakeFiles/choca.dir/genericworker.cpp.o: src/Laser.h
@@ -2230,6 +2237,7 @@ src/CMakeFiles/choca.dir/gotopointI.cpp.o: /usr/include/qt4/QtGui/qworkspace.h
 src/CMakeFiles/choca.dir/gotopointI.cpp.o: /usr/include/qt4/QtGui/qwsembedwidget.h
 src/CMakeFiles/choca.dir/gotopointI.cpp.o: src/CommonBehavior.h
 src/CMakeFiles/choca.dir/gotopointI.cpp.o: src/DifferentialRobot.h
+src/CMakeFiles/choca.dir/gotopointI.cpp.o: src/GetAprilTags.h
 src/CMakeFiles/choca.dir/gotopointI.cpp.o: src/GotoPoint.h
 src/CMakeFiles/choca.dir/gotopointI.cpp.o: src/JointMotor.h
 src/CMakeFiles/choca.dir/gotopointI.cpp.o: src/Laser.h
@@ -3039,6 +3047,7 @@ src/CMakeFiles/choca.dir/main.cpp.o: /usr/include/qt4/QtGui/qworkspace.h
 src/CMakeFiles/choca.dir/main.cpp.o: /usr/include/qt4/QtGui/qwsembedwidget.h
 src/CMakeFiles/choca.dir/main.cpp.o: src/CommonBehavior.h
 src/CMakeFiles/choca.dir/main.cpp.o: src/DifferentialRobot.h
+src/CMakeFiles/choca.dir/main.cpp.o: src/GetAprilTags.h
 src/CMakeFiles/choca.dir/main.cpp.o: src/GotoPoint.h
 src/CMakeFiles/choca.dir/main.cpp.o: src/JointMotor.h
 src/CMakeFiles/choca.dir/main.cpp.o: src/Laser.h
@@ -3478,6 +3487,7 @@ src/CMakeFiles/choca.dir/rcismousepickerI.cpp.o: /usr/include/qt4/QtGui/qworkspa
 src/CMakeFiles/choca.dir/rcismousepickerI.cpp.o: /usr/include/qt4/QtGui/qwsembedwidget.h
 src/CMakeFiles/choca.dir/rcismousepickerI.cpp.o: src/CommonBehavior.h
 src/CMakeFiles/choca.dir/rcismousepickerI.cpp.o: src/DifferentialRobot.h
+src/CMakeFiles/choca.dir/rcismousepickerI.cpp.o: src/GetAprilTags.h
 src/CMakeFiles/choca.dir/rcismousepickerI.cpp.o: src/GotoPoint.h
 src/CMakeFiles/choca.dir/rcismousepickerI.cpp.o: src/JointMotor.h
 src/CMakeFiles/choca.dir/rcismousepickerI.cpp.o: src/Laser.h
@@ -3918,6 +3928,7 @@ src/CMakeFiles/choca.dir/specificmonitor.cpp.o: /usr/include/qt4/QtGui/qworkspac
 src/CMakeFiles/choca.dir/specificmonitor.cpp.o: /usr/include/qt4/QtGui/qwsembedwidget.h
 src/CMakeFiles/choca.dir/specificmonitor.cpp.o: src/CommonBehavior.h
 src/CMakeFiles/choca.dir/specificmonitor.cpp.o: src/DifferentialRobot.h
+src/CMakeFiles/choca.dir/specificmonitor.cpp.o: src/GetAprilTags.h
 src/CMakeFiles/choca.dir/specificmonitor.cpp.o: src/GotoPoint.h
 src/CMakeFiles/choca.dir/specificmonitor.cpp.o: src/JointMotor.h
 src/CMakeFiles/choca.dir/specificmonitor.cpp.o: src/Laser.h
@@ -4369,6 +4380,7 @@ src/CMakeFiles/choca.dir/specificworker.cpp.o: /usr/include/qt4/QtGui/qworkspace
 src/CMakeFiles/choca.dir/specificworker.cpp.o: /usr/include/qt4/QtGui/qwsembedwidget.h
 src/CMakeFiles/choca.dir/specificworker.cpp.o: src/CommonBehavior.h
 src/CMakeFiles/choca.dir/specificworker.cpp.o: src/DifferentialRobot.h
+src/CMakeFiles/choca.dir/specificworker.cpp.o: src/GetAprilTags.h
 src/CMakeFiles/choca.dir/specificworker.cpp.o: src/GotoPoint.h
 src/CMakeFiles/choca.dir/specificworker.cpp.o: src/JointMotor.h
 src/CMakeFiles/choca.dir/specificworker.cpp.o: src/Laser.h

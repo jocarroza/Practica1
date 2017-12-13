@@ -7,6 +7,7 @@ RCISMousePickerTopic.Endpoints=tcp -p 15000
 
 
 # Proxies for required interfaces
+GetAprilTagsProxy = getapriltags:tcp -h localhost -p 14311
 DifferentialRobotProxy = differentialrobot:tcp -h localhost -p 10004
 LaserProxy = laser:tcp -h localhost -p 10003
 JointMotorProxy = jointmotor:tcp -h localhost -p 20000

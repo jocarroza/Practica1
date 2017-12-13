@@ -27,11 +27,12 @@
 #include <ui_mainUI.h>
 
 #include <CommonBehavior.h>
-#include <GotoPoint.h>
 #include <DifferentialRobot.h>
-#include <RCISMousePicker.h>
-#include <Laser.h>
+#include <GetAprilTags.h>
+#include <GotoPoint.h>
 #include <JointMotor.h>
+#include <Laser.h>
+#include <RCISMousePicker.h>
 
 #include <IceStorm/IceStorm.h>
 
@@ -43,11 +44,12 @@ typedef map <string,::IceProxy::Ice::Object*> MapPrx;
 
 using namespace std;
 
-using namespace RoboCompGotoPoint;
 using namespace RoboCompDifferentialRobot;
-using namespace RoboCompRCISMousePicker;
-using namespace RoboCompLaser;
+using namespace RoboCompGetAprilTags;
+using namespace RoboCompGotoPoint;
 using namespace RoboCompJointMotor;
+using namespace RoboCompLaser;
+using namespace RoboCompRCISMousePicker;
 
 
 
@@ -70,8 +72,9 @@ public:
 	QMutex *mutex;
 	
 
-	DifferentialRobotPrx differentialrobot_proxy;
+	GetAprilTagsPrx getapriltags_proxy;
 	LaserPrx laser_proxy;
+	DifferentialRobotPrx differentialrobot_proxy;
 	JointMotorPrx jointmotor_proxy;
 // 	IceStorm::TopicManagerPrx topicmanager_proxy;
 
@@ -89,7 +92,7 @@ protected:
 	int Period;
 
 // 	QTimer storm_timer;
-// 	int storm_period;
+	int storm_period;
 
 public slots:
 	virtual void compute() = 0;

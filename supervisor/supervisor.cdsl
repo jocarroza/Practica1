@@ -1,4 +1,4 @@
-import "/robocomp/interfaces/IDSLs/AprilTags.idsl";
+import "/robocomp/interfaces/IDSLs/GetAprilTags.idsl";
 import "/robocomp/interfaces/IDSLs/DifferentialRobot.idsl";
 import "/robocomp/interfaces/IDSLs/GotoPoint.idsl";
 
@@ -6,8 +6,7 @@ Component supervisor
 {
 	Communications
 	{
-		requires DifferentialRobot, GotoPoint;
-		subscribesTo AprilTags;
+		requires DifferentialRobot, GotoPoint, GetAprilTags;
 	};
 	language Cpp;
 	gui Qt(QWidget);

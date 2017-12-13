@@ -88,6 +88,7 @@
 #include <RCISMousePicker.h>
 #include <GotoPoint.h>
 #include <JointMotor.h>
+#include <GetAprilTags.h>
 
 
 // User includes here
@@ -97,11 +98,12 @@ using namespace std;
 using namespace RoboCompCommonBehavior;
 
 
-using namespace RoboCompGotoPoint;
 using namespace RoboCompDifferentialRobot;
-using namespace RoboCompRCISMousePicker;
-using namespace RoboCompLaser;
+using namespace RoboCompGetAprilTags;
+using namespace RoboCompGotoPoint;
 using namespace RoboCompJointMotor;
+using namespace RoboCompLaser;
+using namespace RoboCompRCISMousePicker;
 
 
 class choca : public RoboComp::Application
@@ -144,12 +146,30 @@ int ::choca::run(int argc, char* argv[])
 
 	int status=EXIT_SUCCESS;
 
+	GetAprilTagsPrx getapriltags_proxy;
 	JointMotorPrx jointmotor_proxy;
 	DifferentialRobotPrx differentialrobot_proxy;
 	LaserPrx laser_proxy;
 
 	string proxy, tmp;
 	initialize();
+
+
+	try
+	{
+		if (not GenericMonitor::configGetString(communicator(), prefix, "GetAprilTagsProxy", proxy, ""))
+		{
+			cout << "[" << PROGRAM_NAME << "]: Can't read configuration for proxy GetAprilTagsProxy\n";
+		}
+		getapriltags_proxy = GetAprilTagsPrx::uncheckedCast( communicator()->stringToProxy( proxy ) );
+	}
+	catch(const Ice::Exception& ex)
+	{
+		cout << "[" << PROGRAM_NAME << "]: Exception: " << ex;
+		return EXIT_FAILURE;
+	}
+	rInfo("GetAprilTagsProxy initialized Ok!");
+	mprx["GetAprilTagsProxy"] = (::IceProxy::Ice::Object*)(&getapriltags_proxy);//Remote server proxy creation example
 
 
 	try
