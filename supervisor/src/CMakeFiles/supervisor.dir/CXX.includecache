@@ -6,6 +6,26 @@
 
 #IncludeRegexTransform: 
 
+/home/jose/robocomp/classes/qlog/qlog.h
+config.h
+/home/jose/robocomp/classes/qlog/config.h
+QtCore
+-
+iostream
+-
+Logger.h
+-
+
+/home/jose/robocomp/classes/rapplication/rapplication.h
+Ice/Ice.h
+-
+Ice/Application.h
+-
+IceUtil/IceUtil.h
+-
+QtCore
+-
+
 /home/robocomp/robocomp/classes/qlog/qlog.cpp
 qlog.h
 /home/robocomp/robocomp/classes/qlog/qlog.h
@@ -237,26 +257,6 @@ moc_specificmonitor.cpp
 /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/moc_specificmonitor.cpp
 moc_specificworker.cpp
 /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor/src/moc_specificworker.cpp
-
-/home/salabeta/robocomp/classes/qlog/qlog.h
-config.h
-/home/salabeta/robocomp/classes/qlog/config.h
-QtCore
--
-iostream
--
-Logger.h
--
-
-/home/salabeta/robocomp/classes/rapplication/rapplication.h
-Ice/Ice.h
--
-Ice/Application.h
--
-IceUtil/IceUtil.h
--
-QtCore
--
 
 /opt/robocomp/include/innermodel/innermodel.h
 stdexcept

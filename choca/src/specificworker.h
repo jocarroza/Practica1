@@ -66,7 +66,7 @@ private:
   
   RoboCompLaser::TLaserData laserData;
   
-  enum State {IDLE, GOTO, BUG};
+  enum State {IDLE, GOTO, BUG, PICK, RELEASE};
   State state = State::IDLE;
   
 

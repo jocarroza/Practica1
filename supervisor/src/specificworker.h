@@ -52,7 +52,7 @@ public slots:
 
 private:
   InnerModel *innermodel;
-  enum State {IDLE, SEARCH, GOTO, PICK, RELEASE, WAIT};
+  enum State {IDLE, SEARCH, GOTO, WAIT};
   State state = State::SEARCH;
   
   struct Tag{

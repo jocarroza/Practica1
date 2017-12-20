@@ -38,7 +38,7 @@ bool SpecificWorker::setParams(RoboCompCommonBehavior::ParameterList params)
 {
 
 
-  innermodel = new InnerModel("/home/robocomp/robocomp/files/innermodel/simpleworld.xml");
+  innermodel = new InnerModel("/home/robocomp/robocomp/files/innermodel/betaWorldArm.xml");
 
   timer.start(Period);
 
@@ -55,7 +55,9 @@ void SpecificWorker::compute()
 //   std::cout << coord.first << coord.second << endl;
   laserData = laser_proxy->getLaserData();
   differentialrobot_proxy->getBaseState(bstate);
-  innermodel->updateTransformValues("base", bstate.x, 0, bstate.z, 0, bstate.alpha, 0);
+  innermodel->updateTransformValues("robot", bstate.x, 0, bstate.z, 0, bstate.alpha, 0);
+  
+   
   
   switch( state )
 
@@ -80,6 +82,13 @@ void SpecificWorker::compute()
     bug();
 
     break;
+    
+   case State::PICK:
+     std::cout<<"PICK"<<endl;
+     break;
+     
+   case State::RELEASE:
+     break;
 
   }
 }
@@ -105,8 +114,19 @@ void SpecificWorker::gotoTarget()
    }
   
   if (target.isEmpty() == false){
+    
+    auto tags = getapriltags_proxy->checkMarcas();
+    
+    if (tags.size() != 0){
+      differentialrobot_proxy->setSpeedBase(0, 0);
+      state = State::PICK;
+      return;
+    }
       
-    QVec tr = innermodel->transform("base", QVec::vec3(coord.first, 0, coord.second), "world");
+    
+//     QVec tr = innermodel->transform("world", QVec::vec3(tags[i].tx, 0, tags[i].tz), "rgbd");
+      
+    QVec tr = innermodel->transform("robot", QVec::vec3(coord.first, 0, coord.second), "world");
     float d = tr.norm2();
     if (d > 400){
   //       vAdv = d;
@@ -276,7 +296,7 @@ void SpecificWorker::picking_box()
 
 void SpecificWorker::releasing_box()
 {
-
+//   gotopoint_proxy->releasing_box();
 }
 
 

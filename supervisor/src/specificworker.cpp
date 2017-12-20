@@ -38,7 +38,7 @@ bool SpecificWorker::setParams(RoboCompCommonBehavior::ParameterList params)
 {
 
 
-	innermodel = new InnerModel("/home/robocomp/robocomp/files/innermodel/simpleworld.xml");
+	innermodel = new InnerModel("/home/robocomp/robocomp/files/innermodel/betaWorldArm.xml");
 	
 	timer.start(Period);
 	
@@ -51,7 +51,7 @@ void SpecificWorker::compute()
   
   RoboCompDifferentialRobot::TBaseState bState;
   differentialrobot_proxy->getBaseState(bState);
-  innermodel->updateTransformValues ("base",bState.x, 0, bState.z, 0, bState.alpha, 0 ); 
+  innermodel->updateTransformValues ("robot",bState.x, 0, bState.z, 0, bState.alpha, 0 ); 
   
   auto tags = getapriltags_proxy->checkMarcas();
   
@@ -97,14 +97,6 @@ void SpecificWorker::compute()
    
     case State::GOTO:
       goPoint();
-    break;
-    
-    case State::PICK:
-      
-    break;
-      
-    case State::RELEASE:
-      
     break;
     
     case State::WAIT:
@@ -154,19 +146,6 @@ void SpecificWorker::goPoint()
   gotopoint_proxy->go("", tag.x, tag.z, 0);
   state = State::WAIT;
 }
-
-
-void SpecificWorker::pick_box()
-{
-//   gotopoint_proxy->picking_box();
-  
-}
-
-void SpecificWorker::release_box()
-{
-//   gotopoint_proxy->releasing_box();
-}
-
 
 void SpecificWorker::wait()
 {

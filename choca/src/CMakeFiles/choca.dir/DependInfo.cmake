@@ -47,9 +47,9 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/opt/robocomp/include"
   "/classes"
   "."
-  "/home/salabeta/robocomp/classes"
-  "/home/salabeta/robocomp/libs"
-  "/home/salabeta/robocomp/interfaces"
+  "/home/jose/robocomp/classes"
+  "/home/jose/robocomp/libs"
+  "/home/jose/robocomp/interfaces"
   "/include"
   )
 

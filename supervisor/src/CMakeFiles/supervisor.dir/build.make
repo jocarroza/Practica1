@@ -59,28 +59,28 @@ include src/CMakeFiles/supervisor.dir/flags.make
 
 src/CommonBehavior.cpp: /opt/robocomp/interfaces/CommonBehavior.ice
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating CommonBehavior.cpp and CommonBehavior.h from CommonBehavior.ice"
-	cd /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor/src && slice2cpp -I/home/salabeta/robocomp//interfaces/ -I/opt/robocomp/interfaces -I. /opt/robocomp/interfaces/CommonBehavior.ice --output-dir .
+	cd /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor/src && slice2cpp -I/home/jose/robocomp//interfaces/ -I/opt/robocomp/interfaces -I. /opt/robocomp/interfaces/CommonBehavior.ice --output-dir .
 
 src/CommonBehavior.h: src/CommonBehavior.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate src/CommonBehavior.h
 
 src/GetAprilTags.cpp: /opt/robocomp/interfaces/GetAprilTags.ice
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating GetAprilTags.cpp and GetAprilTags.h from GetAprilTags.ice"
-	cd /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor/src && slice2cpp -I/home/salabeta/robocomp//interfaces/ -I/opt/robocomp/interfaces -I. /opt/robocomp/interfaces/GetAprilTags.ice --output-dir .
+	cd /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor/src && slice2cpp -I/home/jose/robocomp//interfaces/ -I/opt/robocomp/interfaces -I. /opt/robocomp/interfaces/GetAprilTags.ice --output-dir .
 
 src/GetAprilTags.h: src/GetAprilTags.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate src/GetAprilTags.h
 
 src/DifferentialRobot.cpp: /opt/robocomp/interfaces/DifferentialRobot.ice
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating DifferentialRobot.cpp and DifferentialRobot.h from DifferentialRobot.ice"
-	cd /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor/src && slice2cpp -I/home/salabeta/robocomp//interfaces/ -I/opt/robocomp/interfaces -I. /opt/robocomp/interfaces/DifferentialRobot.ice --output-dir .
+	cd /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor/src && slice2cpp -I/home/jose/robocomp//interfaces/ -I/opt/robocomp/interfaces -I. /opt/robocomp/interfaces/DifferentialRobot.ice --output-dir .
 
 src/DifferentialRobot.h: src/DifferentialRobot.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate src/DifferentialRobot.h
 
 src/GotoPoint.cpp: /opt/robocomp/interfaces/GotoPoint.ice
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating GotoPoint.cpp and GotoPoint.h from GotoPoint.ice"
-	cd /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor/src && slice2cpp -I/home/salabeta/robocomp//interfaces/ -I/opt/robocomp/interfaces -I. /opt/robocomp/interfaces/GotoPoint.ice --output-dir .
+	cd /home/robocomp/robocomp/components/CarrozaGarcia/Practica1/supervisor/src && slice2cpp -I/home/jose/robocomp//interfaces/ -I/opt/robocomp/interfaces -I. /opt/robocomp/interfaces/GotoPoint.ice --output-dir .
 
 src/GotoPoint.h: src/GotoPoint.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate src/GotoPoint.h
