@@ -23,7 +23,16 @@
 */
 SpecificWorker::SpecificWorker(MapPrx& mprx) : GenericWorker(mprx)
 {
-
+  MotorGoalPosition pos;
+  pos.name = "wrist_right_2";
+//   pos.maxSpeed = 1.0;
+  pos.position = 1.5;
+  jointmotor_proxy->setPosition(pos);
+  
+  pos.name = "shoulder_right_2";
+//   pos.maxSpeed = 1.0;
+  pos.position = -1.0;
+  jointmotor_proxy->setPosition(pos);
 }
 
 /**
@@ -57,6 +66,7 @@ void SpecificWorker::compute()
   differentialrobot_proxy->getBaseState(bstate);
   innermodel->updateTransformValues("robot", bstate.x, 0, bstate.z, 0, bstate.alpha, 0);
   
+  
    
   
   switch( state )
@@ -84,10 +94,17 @@ void SpecificWorker::compute()
     break;
     
    case State::PICK:
-     std::cout<<"PICK"<<endl;
+     std::cout<<"PICKING BOX"<<endl;
+     state = State::IDLE;
+     usleep(2000000);
+     target.setEmpty();
      break;
      
    case State::RELEASE:
+     std::cout<<"RELEASING BOX"<<endl;
+     state = State::IDLE;
+     usleep(2000000);
+     target.setEmpty();
      break;
 
   }
@@ -118,6 +135,7 @@ void SpecificWorker::gotoTarget()
     auto tags = getapriltags_proxy->checkMarcas();
     
     if (tags.size() != 0){
+      usleep(300);
       differentialrobot_proxy->setSpeedBase(0, 0);
       state = State::PICK;
       return;
@@ -145,9 +163,9 @@ void SpecificWorker::gotoTarget()
       differentialrobot_proxy->setSpeedBase(vAdv,vRot);
     }
     else{
-      state = State::IDLE;
+      state = State::RELEASE;
       differentialrobot_proxy->setSpeedBase(0, 0);
-      target.setEmpty();
+//       target.setEmpty();
       return;
     }
   }
