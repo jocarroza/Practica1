@@ -134,7 +134,7 @@ void SpecificWorker::gotoTarget()
     
     auto tags = getapriltags_proxy->checkMarcas();
     
-    if (tags.size() != 0){
+    if (tags.size() != 0 && target.getAlpha()!=0.0){
       usleep(300);
       differentialrobot_proxy->setSpeedBase(0, 0);
       state = State::PICK;
@@ -281,6 +281,7 @@ float SpecificWorker::gaussian(float vr, float vx, float h)
 void SpecificWorker::go(const string& nodo, const float x, const float y, const float alpha)
 {
   target.insertarCoord(x, y);
+  target.putAlpha(alpha);
 }
 
 void SpecificWorker::turn(const float speed)

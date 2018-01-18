@@ -23,7 +23,9 @@
 */
 SpecificWorker::SpecificWorker(MapPrx& mprx) : GenericWorker(mprx)
 {
-
+  for (int i=0; i<10; i++){
+    vector[i] = 999;
+  }
 }
 
 /**
@@ -123,11 +125,14 @@ void SpecificWorker::search()
   
   if (tag.empty == false){
     //gotopoint_proxy->stop();
-    
+//     std::cout<<tag.id<<endl;
       
     if (tag.id >=10 && caja == true){
-      gotopoint_proxy->stop();
-      state = State::GOTO;
+      if (!visitado(tag.id)){
+	insertar(tag.id);
+	gotopoint_proxy->stop();
+	state = State::GOTO;
+      }
     }
     else{
       if (tag.id == 0 && caja == false){
@@ -143,7 +148,11 @@ void SpecificWorker::search()
 
 void SpecificWorker::goPoint()
 {
-  gotopoint_proxy->go("", tag.x, tag.z, 0);
+  float id = 1.0;
+  if (tag.id == 0)
+    id = 0.0;
+  
+  gotopoint_proxy->go("", tag.x, tag.z, id);
   state = State::WAIT;
 }
 
@@ -160,6 +169,26 @@ void SpecificWorker::wait()
     else{
       state = State::SEARCH;
       tag.empty = true;
+    }
+  }
+}
+
+bool SpecificWorker::visitado(int id)
+{
+  
+  for (int i=0; i<10; i++){
+    if (vector[i] == id)
+      return true;
+  }
+  return false;
+}
+
+void SpecificWorker::insertar(int id)
+{
+  for (int i=0; i<10; i++){
+    if (vector[i] == 999){
+      vector[i] = id;
+      return;
     }
   }
 }

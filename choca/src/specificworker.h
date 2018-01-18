@@ -98,6 +98,16 @@ private:
 	   QMutexLocker lm(&mutex);
 	   return std::make_pair(x,z);
 	 }
+	 
+	 void putAlpha(float id){
+	   alpha = id;
+	 }
+	 
+	 float getAlpha(){
+	   QMutexLocker lm(&mutex);
+	   return alpha;
+	 }
+	
 	};
 	
 	Target target;

@@ -62,6 +62,7 @@ private:
 	  bool empty = true;
 	};
 	
+	int vector[10];
 	
 	
 	int current = 0;
@@ -70,9 +71,10 @@ private:
 	
 	void search();
 	void goPoint();
-	void pick_box();
-	void release_box();
 	void wait();
+	
+	bool visitado(int id);
+	void insertar(int id);
 	
 };
 
