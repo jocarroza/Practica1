@@ -128,11 +128,12 @@ void SpecificWorker::search()
 //     std::cout<<tag.id<<endl;
       
     if (tag.id >=10 && caja == true){
-      if (!visitado(tag.id)){
-	insertar(tag.id);
+//       if (!visitado(tag.id)){
+	std::cout<<tag.id<<endl;
+// 	insertar(tag.id);
 	gotopoint_proxy->stop();
 	state = State::GOTO;
-      }
+//       }
     }
     else{
       if (tag.id == 0 && caja == false){

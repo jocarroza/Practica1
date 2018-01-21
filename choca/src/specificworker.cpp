@@ -94,6 +94,7 @@ void SpecificWorker::compute()
     break;
     
    case State::PICK:
+     
      std::cout<<"PICKING BOX"<<endl;
      state = State::IDLE;
      usleep(2000000);
